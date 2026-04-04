@@ -1,728 +1,764 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-  <!-- ===== SEO META TAGS ===== -->
-  <title>General Conference Notes | April 2026 LDS Talk Summaries & Key Quotes</title>
-  <meta name="description" content="Personal notes, summaries, and key quotes from the April 2026 General Conference of The Church of Jesus Christ of Latter-day Saints. Includes scripture references per talk." />
-  <meta name="keywords" content="General Conference 2026, LDS General Conference notes, April 2026 conference summaries, LDS talk summaries, church conference quotes, scripture references general conference" />
-  <meta name="author" content="Your Name" />
-  <link rel="canonical" href="https://yoursite.com/general-conference-notes/" />
-
-  <!-- Open Graph (for sharing on Facebook, etc.) -->
+  <title>General Conference Summaries | LDS Talk Notes & Quotes</title>
+  <meta name="description" content="Community notes, summaries, key quotes, and scripture references from LDS General Conference. Contribute your thoughts and insights." />
+  <meta name="keywords" content="General Conference summaries, LDS talk notes, General Conference quotes, LDS conference 2026, church conference summaries" />
+  <link rel="canonical" href="https://www.generalconferencesummaries.com/" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="General Conference Notes | April 2026 LDS Talk Summaries" />
-  <meta property="og:description" content="Talk summaries, key quotes, and scripture references from April 2026 General Conference." />
-  <meta property="og:url" content="https://yoursite.com/general-conference-notes/" />
-  <meta property="og:image" content="https://yoursite.com/images/conf-og.jpg" />
-
-  <!-- Twitter Card -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="General Conference Notes | April 2026" />
-  <meta name="twitter:description" content="Talk summaries, key quotes, and scripture references from April 2026 LDS General Conference." />
-
-  <!-- Schema.org structured data for Google -->
+  <meta property="og:title" content="General Conference Summaries | LDS Talk Notes & Quotes" />
+  <meta property="og:description" content="Community notes, summaries, and quotes from LDS General Conference." />
+  <meta property="og:url" content="https://www.generalconferencesummaries.com/" />
   <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "General Conference Notes",
-    "description": "Personal notes and summaries from LDS General Conference",
-    "url": "https://yoursite.com",
-    "author": {
-      "@type": "Person",
-      "name": "Your Name"
-    },
-    "blogPost": [
-      {
-        "@type": "BlogPosting",
-        "headline": "April 2026 General Conference – Saturday Morning Session",
-        "datePublished": "2026-04-04",
-        "author": { "@type": "Person", "name": "Your Name" }
-      }
-    ]
-  }
+  {"@context":"https://schema.org","@type":"Blog","name":"General Conference Summaries","description":"Community LDS General Conference notes and summaries","url":"https://www.generalconferencesummaries.com"}
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Jost:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKB3T3YLP2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PKB3T3YLP2');
   </script>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;1,8..60,300&display=swap" rel="stylesheet" />
-
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <style>
     :root {
-      --cream: #f9f5ee;
-      --parchment: #ede8dc;
-      --gold: #b08d57;
-      --gold-light: #d4af72;
-      --brown-dark: #2c1f0e;
-      --brown-mid: #5c3d1e;
-      --brown-light: #8b6340;
-      --olive: #6b7355;
-      --text: #2c1f0e;
-      --text-soft: #6b5840;
-      --white: #ffffff;
-      --shadow: 0 4px 24px rgba(44,31,14,0.10);
+      --bg: #0e0c09;
+      --surface: #181410;
+      --surface2: #211d18;
+      --gold: #c9a84c;
+      --gold2: #e8c97a;
+      --cream: #f0e6d0;
+      --cream2: #c8b99a;
+      --text: #f0e6d0;
+      --text-soft: #9a8a72;
+      --border: rgba(201,168,76,0.18);
+      --border2: rgba(201,168,76,0.35);
+      --red: #c0392b;
+      --green: #27ae60;
+      --shadow: 0 8px 40px rgba(0,0,0,0.5);
     }
-
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
     html { scroll-behavior: smooth; }
+    body { background: var(--bg); color: var(--text); font-family: 'Jost', sans-serif; font-weight: 300; font-size: 16px; line-height: 1.7; min-height: 100vh; }
 
-    body {
-      background-color: var(--cream);
-      color: var(--text);
-      font-family: 'Source Serif 4', Georgia, serif;
-      font-size: 18px;
-      line-height: 1.75;
-    }
+    /* HEADER */
+    header { text-align: center; padding: 72px 24px 56px; border-bottom: 1px solid var(--border); position: relative; overflow: hidden; }
+    header::before { content: ''; position: absolute; inset: 0; background: radial-gradient(ellipse at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%); pointer-events: none; }
+    .eyebrow { font-size: 0.7rem; letter-spacing: 0.3em; text-transform: uppercase; color: var(--gold); margin-bottom: 20px; }
+    header h1 { font-family: 'Cormorant Garamond', serif; font-size: clamp(2.4rem, 6vw, 4rem); font-weight: 300; color: var(--cream); line-height: 1.1; margin-bottom: 16px; }
+    header h1 em { font-style: italic; color: var(--gold2); }
+    .header-sub { color: var(--text-soft); font-size: 0.9rem; max-width: 480px; margin: 0 auto 28px; }
+    .gold-line { width: 48px; height: 1px; background: var(--gold); margin: 0 auto; }
 
-    /* ---- HEADER ---- */
-    header {
-      background: var(--brown-dark);
-      color: var(--cream);
-      text-align: center;
-      padding: 60px 20px 50px;
-      position: relative;
-      overflow: hidden;
-    }
-    header::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: repeating-linear-gradient(
-        45deg,
-        transparent,
-        transparent 40px,
-        rgba(176,141,87,0.04) 40px,
-        rgba(176,141,87,0.04) 41px
-      );
-      pointer-events: none;
-    }
-    .header-eyebrow {
-      font-family: 'Source Serif 4', serif;
-      font-size: 0.78rem;
-      font-weight: 300;
-      letter-spacing: 0.28em;
-      text-transform: uppercase;
-      color: var(--gold-light);
-      margin-bottom: 16px;
-    }
-    header h1 {
-      font-family: 'Playfair Display', serif;
-      font-size: clamp(2rem, 5vw, 3.4rem);
-      font-weight: 700;
-      line-height: 1.15;
-      color: var(--cream);
-      margin-bottom: 16px;
-    }
-    header h1 em {
-      font-style: italic;
-      color: var(--gold-light);
-    }
-    .header-sub {
-      font-size: 1rem;
-      font-weight: 300;
-      color: rgba(249,245,238,0.7);
-      max-width: 520px;
-      margin: 0 auto;
-    }
-    .gold-rule {
-      width: 60px;
-      height: 2px;
-      background: var(--gold);
-      margin: 24px auto;
-    }
+    /* NAV */
+    .top-nav { display: flex; justify-content: space-between; align-items: center; padding: 14px 32px; border-bottom: 1px solid var(--border); background: var(--surface); position: sticky; top: 0; z-index: 200; }
+    .nav-brand { font-family: 'Cormorant Garamond', serif; font-size: 1.1rem; color: var(--gold); letter-spacing: 0.05em; }
+    .nav-right { display: flex; gap: 12px; align-items: center; }
+    .btn { display: inline-flex; align-items: center; gap: 6px; padding: 8px 18px; border-radius: 2px; font-family: 'Jost', sans-serif; font-size: 0.78rem; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; border: none; transition: all 0.2s; text-decoration: none; }
+    .btn-gold { background: var(--gold); color: var(--bg); }
+    .btn-gold:hover { background: var(--gold2); }
+    .btn-outline { background: transparent; color: var(--gold); border: 1px solid var(--border2); }
+    .btn-outline:hover { background: rgba(201,168,76,0.08); }
+    .btn-ghost { background: transparent; color: var(--text-soft); border: 1px solid var(--border); }
+    .btn-ghost:hover { color: var(--text); border-color: var(--border2); }
+    .btn-danger { background: transparent; color: var(--red); border: 1px solid rgba(192,57,43,0.3); font-size: 0.72rem; padding: 5px 12px; }
+    .btn-danger:hover { background: rgba(192,57,43,0.1); }
+    .btn-sm { padding: 5px 12px; font-size: 0.72rem; }
 
-    /* ---- NAV ---- */
-    nav {
-      background: var(--parchment);
-      border-bottom: 1px solid rgba(176,141,87,0.3);
-      padding: 0 20px;
-      display: flex;
-      justify-content: center;
-      gap: 0;
-      flex-wrap: wrap;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-      box-shadow: 0 2px 12px rgba(44,31,14,0.08);
-    }
-    nav a {
-      display: inline-block;
-      padding: 14px 20px;
-      font-size: 0.82rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      text-decoration: none;
-      color: var(--brown-mid);
-      border-bottom: 2px solid transparent;
-      transition: color 0.2s, border-color 0.2s;
-    }
-    nav a:hover {
-      color: var(--gold);
-      border-bottom-color: var(--gold);
-    }
+    /* LAYOUT */
+    .container { max-width: 900px; margin: 0 auto; padding: 0 24px; }
+    .page { padding: 48px 0 80px; }
 
-    /* ---- LAYOUT ---- */
-    .container {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 24px;
-    }
+    /* AUTH MODAL */
+    .modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.8); z-index: 500; align-items: center; justify-content: center; }
+    .modal-overlay.open { display: flex; }
+    .modal { background: var(--surface); border: 1px solid var(--border2); border-radius: 4px; padding: 40px; width: 100%; max-width: 400px; position: relative; }
+    .modal h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--gold2); margin-bottom: 6px; }
+    .modal p { color: var(--text-soft); font-size: 0.85rem; margin-bottom: 24px; }
+    .modal-close { position: absolute; top: 16px; right: 20px; background: none; border: none; color: var(--text-soft); font-size: 1.2rem; cursor: pointer; }
+    .form-group { margin-bottom: 16px; }
+    .form-group label { display: block; font-size: 0.7rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 6px; }
+    .form-group input, .form-group textarea, .form-group select { width: 100%; background: var(--surface2); border: 1px solid var(--border); border-radius: 2px; color: var(--text); font-family: 'Jost', sans-serif; font-size: 0.9rem; padding: 10px 14px; outline: none; transition: border-color 0.2s; }
+    .form-group input:focus, .form-group textarea:focus, .form-group select:focus { border-color: var(--gold); }
+    .form-group input::placeholder, .form-group textarea::placeholder { color: var(--text-soft); }
+    .form-group select option { background: var(--surface2); }
+    .form-group textarea { resize: vertical; min-height: 80px; }
+    .form-grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    @media (max-width: 580px) { .form-grid2 { grid-template-columns: 1fr; } }
+    .full { grid-column: 1 / -1; }
+    .msg { font-size: 0.82rem; padding: 10px 14px; border-radius: 2px; margin-bottom: 14px; }
+    .msg-err { background: rgba(192,57,43,0.15); border: 1px solid rgba(192,57,43,0.3); color: #e87c6e; }
+    .msg-ok { background: rgba(39,174,96,0.12); border: 1px solid rgba(39,174,96,0.3); color: #6ed49a; }
 
-    .intro-section {
-      padding: 52px 0 36px;
-      border-bottom: 1px solid var(--parchment);
-      margin-bottom: 48px;
-    }
-    .intro-section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
-      color: var(--brown-dark);
-      margin-bottom: 12px;
-    }
-    .intro-section p {
-      color: var(--text-soft);
-      font-weight: 300;
-    }
+    /* CONFERENCES LIST */
+    .conf-grid { display: grid; gap: 20px; margin-top: 32px; }
+    .conf-card { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 28px 32px; display: flex; justify-content: space-between; align-items: center; cursor: pointer; transition: all 0.2s; text-decoration: none; }
+    .conf-card:hover { border-color: var(--border2); background: var(--surface2); transform: translateY(-2px); box-shadow: var(--shadow); }
+    .conf-card-left h2 { font-family: 'Cormorant Garamond', serif; font-size: 1.5rem; color: var(--cream); margin-bottom: 4px; }
+    .conf-card-left p { color: var(--text-soft); font-size: 0.85rem; }
+    .conf-card-right { display: flex; gap: 10px; align-items: center; }
+    .talk-count { font-size: 0.75rem; color: var(--gold); background: rgba(201,168,76,0.1); border: 1px solid var(--border); padding: 4px 12px; border-radius: 20px; }
+    .arrow { color: var(--gold); font-size: 1.2rem; }
 
-    /* ---- SESSION BLOCK ---- */
-    .session {
-      margin-bottom: 72px;
-    }
-    .session-header {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      margin-bottom: 36px;
-    }
-    .session-badge {
-      background: var(--brown-dark);
-      color: var(--gold-light);
-      font-size: 0.7rem;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      padding: 6px 14px;
-      border-radius: 2px;
-      white-space: nowrap;
-    }
-    .session-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.6rem;
-      color: var(--brown-dark);
-    }
+    /* SESSION TABS */
+    .session-tabs { display: flex; gap: 0; border-bottom: 1px solid var(--border); margin-bottom: 36px; flex-wrap: wrap; }
+    .session-tab { padding: 12px 22px; font-size: 0.75rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--text-soft); cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; background: none; border-top: none; border-left: none; border-right: none; font-family: 'Jost', sans-serif; }
+    .session-tab:hover { color: var(--gold); }
+    .session-tab.active { color: var(--gold); border-bottom-color: var(--gold); }
 
-    /* ---- TALK CARD ---- */
-    .talk-card {
-      background: var(--white);
-      border: 1px solid rgba(176,141,87,0.2);
-      border-left: 4px solid var(--gold);
-      border-radius: 4px;
-      padding: 32px 36px;
-      margin-bottom: 28px;
-      box-shadow: var(--shadow);
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .talk-card:hover {
-      transform: translateY(-2px);
-      box-shadow: 0 8px 32px rgba(44,31,14,0.13);
-    }
+    /* TALK CARD */
+    .talk-card { background: var(--surface); border: 1px solid var(--border); border-left: 3px solid var(--gold); border-radius: 4px; padding: 28px 32px; margin-bottom: 20px; transition: all 0.2s; }
+    .talk-card:hover { border-color: var(--border2); box-shadow: 0 4px 24px rgba(0,0,0,0.3); }
+    .talk-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 18px; gap: 16px; }
+    .talk-speaker { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--cream); }
+    .talk-title-text { font-size: 0.85rem; color: var(--gold); font-style: italic; margin-top: 2px; }
+    .talk-actions { display: flex; gap: 8px; flex-shrink: 0; }
+    .section-label { font-size: 0.65rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--text-soft); margin-bottom: 8px; margin-top: 18px; }
+    .talk-summary { font-size: 0.92rem; color: var(--cream2); font-weight: 300; line-height: 1.75; }
+    .quotes-list { list-style: none; margin-top: 4px; }
+    .quotes-list li { position: relative; padding: 10px 14px 10px 36px; margin-bottom: 8px; background: var(--surface2); border-radius: 2px; font-size: 0.88rem; font-style: italic; color: var(--cream2); line-height: 1.6; }
+    .quotes-list li::before { content: '\201C'; position: absolute; left: 10px; top: 6px; font-family: 'Cormorant Garamond', serif; font-size: 1.6rem; color: var(--gold); line-height: 1; }
+    .scripture-tags { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 4px; }
+    .scripture-tag { background: rgba(201,168,76,0.08); border: 1px solid var(--border); color: var(--gold); font-size: 0.72rem; padding: 3px 10px; border-radius: 20px; letter-spacing: 0.05em; }
 
-    .talk-speaker {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.25rem;
-      font-weight: 700;
-      color: var(--brown-dark);
-      margin-bottom: 2px;
-    }
-    .talk-title {
-      font-size: 0.88rem;
-      font-style: italic;
-      color: var(--gold);
-      margin-bottom: 20px;
-      font-weight: 300;
-    }
+    /* REACTIONS */
+    .reactions-bar { display: flex; gap: 10px; margin-top: 20px; padding-top: 18px; border-top: 1px solid var(--border); flex-wrap: wrap; align-items: center; }
+    .reaction-btn { display: inline-flex; align-items: center; gap: 5px; background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 5px 13px; font-size: 0.8rem; color: var(--text-soft); cursor: pointer; transition: all 0.2s; font-family: 'Jost', sans-serif; }
+    .reaction-btn:hover, .reaction-btn.reacted { background: rgba(201,168,76,0.1); border-color: var(--border2); color: var(--gold); }
+    .reaction-count { font-weight: 500; color: var(--gold); }
+    .comments-toggle { margin-left: auto; font-size: 0.75rem; color: var(--text-soft); cursor: pointer; background: none; border: none; font-family: 'Jost', sans-serif; letter-spacing: 0.1em; text-transform: uppercase; transition: color 0.2s; }
+    .comments-toggle:hover { color: var(--gold); }
 
-    /* Summary */
-    .section-label {
-      font-size: 0.7rem;
-      font-weight: 400;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--brown-light);
-      margin-bottom: 6px;
-      display: flex;
-      align-items: center;
-      gap: 8px;
-    }
-    .section-label::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--parchment);
-    }
-    .talk-summary {
-      font-size: 0.97rem;
-      color: var(--text-soft);
-      margin-bottom: 20px;
-      font-weight: 300;
-    }
+    /* COMMENTS */
+    .comments-section { margin-top: 18px; padding-top: 18px; border-top: 1px solid var(--border); display: none; }
+    .comments-section.open { display: block; }
+    .comment { padding: 12px 0; border-bottom: 1px solid var(--border); }
+    .comment:last-child { border-bottom: none; }
+    .comment-meta { font-size: 0.72rem; color: var(--text-soft); margin-bottom: 5px; }
+    .comment-meta strong { color: var(--gold); }
+    .comment-body { font-size: 0.88rem; color: var(--cream2); line-height: 1.65; }
+    .comment-form { margin-top: 16px; display: flex; gap: 10px; }
+    .comment-form input { flex: 1; background: var(--surface2); border: 1px solid var(--border); border-radius: 2px; color: var(--text); font-family: 'Jost', sans-serif; font-size: 0.88rem; padding: 9px 13px; outline: none; }
+    .comment-form input:focus { border-color: var(--gold); }
 
-    /* Quotes */
-    .quotes-list {
-      list-style: none;
-      margin-bottom: 20px;
-    }
-    .quotes-list li {
-      position: relative;
-      padding: 12px 16px 12px 44px;
-      margin-bottom: 10px;
-      background: var(--cream);
-      border-radius: 3px;
-      font-size: 0.95rem;
-      font-style: italic;
-      color: var(--brown-mid);
-      line-height: 1.6;
-    }
-    .quotes-list li::before {
-      content: '\201C';
-      position: absolute;
-      left: 14px;
-      top: 8px;
-      font-family: 'Playfair Display', serif;
-      font-size: 2rem;
-      color: var(--gold);
-      line-height: 1;
-    }
+    /* PENDING SUBMISSIONS */
+    .pending-card { background: var(--surface); border: 1px solid rgba(232,201,122,0.25); border-left: 3px solid var(--gold2); border-radius: 4px; padding: 22px 28px; margin-bottom: 16px; opacity: 0.85; }
+    .pending-badge { display: inline-block; font-size: 0.65rem; letter-spacing: 0.2em; text-transform: uppercase; background: rgba(232,201,122,0.1); border: 1px solid rgba(232,201,122,0.3); color: var(--gold2); padding: 2px 10px; border-radius: 20px; margin-bottom: 12px; }
 
-    /* Scriptures */
-    .scripture-tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-    }
-    .scripture-tag {
-      background: var(--parchment);
-      border: 1px solid rgba(176,141,87,0.35);
-      color: var(--brown-mid);
-      font-size: 0.78rem;
-      padding: 4px 12px;
-      border-radius: 20px;
-      letter-spacing: 0.04em;
-    }
+    /* ADMIN PANEL */
+    .admin-section { background: var(--surface); border: 1px solid var(--border2); border-radius: 4px; padding: 32px; margin-bottom: 24px; }
+    .admin-section h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--gold2); margin-bottom: 20px; }
 
-    /* ---- ADD A TALK FORM ---- */
-    .add-section {
-      background: var(--brown-dark);
-      color: var(--cream);
-      padding: 56px 0;
-      margin: 64px 0 0;
-    }
-    .add-section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem;
-      color: var(--gold-light);
-      margin-bottom: 8px;
-    }
-    .add-section p {
-      color: rgba(249,245,238,0.65);
-      font-size: 0.95rem;
-      margin-bottom: 32px;
-      font-weight: 300;
-    }
-    .form-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 18px;
-      margin-bottom: 18px;
-    }
-    @media (max-width: 600px) {
-      .form-grid { grid-template-columns: 1fr; }
-    }
-    .form-group {
-      display: flex;
-      flex-direction: column;
-      gap: 6px;
-    }
-    .form-group.full { grid-column: 1 / -1; }
-    label {
-      font-size: 0.72rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--gold-light);
-    }
-    input, textarea, select {
-      background: rgba(255,255,255,0.06);
-      border: 1px solid rgba(176,141,87,0.35);
-      border-radius: 3px;
-      color: var(--cream);
-      font-family: 'Source Serif 4', serif;
-      font-size: 0.95rem;
-      padding: 10px 14px;
-      outline: none;
-      transition: border-color 0.2s;
-    }
-    input::placeholder, textarea::placeholder { color: rgba(249,245,238,0.35); }
-    input:focus, textarea:focus, select:focus { border-color: var(--gold); }
-    select option { background: var(--brown-dark); }
-    textarea { resize: vertical; min-height: 90px; }
-    .btn-add {
-      background: var(--gold);
-      color: var(--brown-dark);
-      border: none;
-      font-family: 'Source Serif 4', serif;
-      font-size: 0.88rem;
-      font-weight: 400;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      padding: 13px 36px;
-      border-radius: 2px;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.15s;
-      margin-top: 8px;
-    }
-    .btn-add:hover { background: var(--gold-light); transform: translateY(-1px); }
+    /* PAGE SECTIONS */
+    .page-title { font-family: 'Cormorant Garamond', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); color: var(--cream); margin-bottom: 6px; }
+    .page-sub { color: var(--text-soft); font-size: 0.88rem; margin-bottom: 32px; }
+    .back-link { display: inline-flex; align-items: center; gap: 6px; color: var(--text-soft); font-size: 0.78rem; letter-spacing: 0.12em; text-transform: uppercase; cursor: pointer; margin-bottom: 28px; background: none; border: none; font-family: 'Jost', sans-serif; transition: color 0.2s; }
+    .back-link:hover { color: var(--gold); }
+    .divider { height: 1px; background: var(--border); margin: 32px 0; }
+    .empty-state { text-align: center; padding: 60px 20px; color: var(--text-soft); }
+    .empty-state p { font-size: 0.9rem; }
+    .user-chip { display: inline-flex; align-items: center; gap: 8px; background: var(--surface2); border: 1px solid var(--border); border-radius: 20px; padding: 5px 14px 5px 8px; font-size: 0.78rem; color: var(--text-soft); }
+    .user-dot { width: 22px; height: 22px; background: var(--gold); border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.65rem; color: var(--bg); font-weight: 500; }
+    .spinner { display: inline-block; width: 18px; height: 18px; border: 2px solid var(--border); border-top-color: var(--gold); border-radius: 50%; animation: spin 0.7s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: translateY(0); } }
+    .fade-up { animation: fadeUp 0.35s ease both; }
+    .loading-center { display: flex; justify-content: center; padding: 60px; }
 
-    /* ---- DYNAMIC CARDS area ---- */
-    #dynamic-talks { margin-top: 0; }
+    /* SUBMIT TALK FORM */
+    .submit-section { background: var(--surface); border: 1px solid var(--border); border-radius: 4px; padding: 32px; margin-top: 40px; }
+    .submit-section h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--gold2); margin-bottom: 6px; }
+    .submit-section p { color: var(--text-soft); font-size: 0.85rem; margin-bottom: 22px; }
 
-    /* ---- SEO TIPS SECTION ---- */
-    .seo-section {
-      background: var(--parchment);
-      border-top: 1px solid rgba(176,141,87,0.25);
-      padding: 52px 0;
-    }
-    .seo-section h2 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.5rem;
-      color: var(--brown-dark);
-      margin-bottom: 20px;
-    }
-    .seo-tips {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .seo-tip {
-      background: var(--white);
-      border: 1px solid rgba(176,141,87,0.18);
-      border-radius: 4px;
-      padding: 22px 24px;
-    }
-    .seo-tip h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1rem;
-      color: var(--brown-dark);
-      margin-bottom: 8px;
-    }
-    .seo-tip p {
-      font-size: 0.85rem;
-      color: var(--text-soft);
-      font-weight: 300;
-      line-height: 1.6;
-    }
-
-    /* ---- FOOTER ---- */
-    footer {
-      background: var(--brown-dark);
-      color: rgba(249,245,238,0.5);
-      text-align: center;
-      padding: 32px 20px;
-      font-size: 0.82rem;
-      font-weight: 300;
-    }
-    footer a { color: var(--gold-light); text-decoration: none; }
-
-    /* ---- ANIMATIONS ---- */
-    @keyframes fadeUp {
-      from { opacity: 0; transform: translateY(18px); }
-      to   { opacity: 1; transform: translateY(0); }
-    }
-    .talk-card { animation: fadeUp 0.4s ease both; }
-    .new-card  { animation: fadeUp 0.35s ease both; border-left-color: var(--olive); }
+    footer { border-top: 1px solid var(--border); text-align: center; padding: 32px 20px; color: var(--text-soft); font-size: 0.78rem; }
+    footer a { color: var(--gold); text-decoration: none; }
 
     @media (max-width: 600px) {
-      .talk-card { padding: 22px 20px; }
-      header { padding: 40px 20px 36px; }
-      .session-header { flex-direction: column; align-items: flex-start; gap: 8px; }
+      .top-nav { padding: 12px 16px; }
+      .talk-card { padding: 20px 18px; }
+      .conf-card { flex-direction: column; align-items: flex-start; gap: 14px; }
     }
   </style>
 </head>
 <body>
 
-<!-- ===== HEADER ===== -->
-<header>
-  <p class="header-eyebrow">April 4–5, 2026 · Salt Lake City, Utah</p>
-  <h1>General Conference<br><em>Notes & Summaries</em></h1>
-  <div class="gold-rule"></div>
-  <p class="header-sub">Talk summaries, key quotes, and scripture references from the 196th Annual General Conference</p>
-</header>
-
-<!-- ===== NAV ===== -->
-<nav aria-label="Session navigation">
-  <a href="#sat-morning">Sat. Morning</a>
-  <a href="#sat-afternoon">Sat. Afternoon</a>
-  <a href="#sun-morning">Sun. Morning</a>
-  <a href="#sun-afternoon">Sun. Afternoon</a>
-  <a href="#add-talk">Add a Talk</a>
+<!-- TOP NAV -->
+<nav class="top-nav">
+  <span class="nav-brand" onclick="showPage('home')" style="cursor:pointer">⛪ GC Summaries</span>
+  <div class="nav-right" id="nav-right">
+    <button class="btn btn-outline btn-sm" onclick="openModal('login-modal')">Sign In</button>
+    <button class="btn btn-gold btn-sm" onclick="openModal('signup-modal')">Join</button>
+  </div>
 </nav>
 
-<!-- ===== MAIN CONTENT ===== -->
-<main>
-<div class="container">
+<!-- AUTH MODALS -->
+<div class="modal-overlay" id="login-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('login-modal')">✕</button>
+    <h2>Welcome Back</h2>
+    <p>Sign in to add comments, reactions, and submit summaries.</p>
+    <div id="login-msg"></div>
+    <div class="form-group"><label>Email</label><input type="email" id="login-email" placeholder="your@email.com" /></div>
+    <div class="form-group"><label>Password</label><input type="password" id="login-pass" placeholder="••••••••" /></div>
+    <button class="btn btn-gold" style="width:100%;justify-content:center;margin-top:8px" onclick="doLogin()">Sign In</button>
+    <p style="text-align:center;margin-top:14px;font-size:0.8rem;color:var(--text-soft)">No account? <span style="color:var(--gold);cursor:pointer" onclick="closeModal('login-modal');openModal('signup-modal')">Join free</span></p>
+  </div>
+</div>
 
-  <section class="intro-section" aria-label="About this site">
-    <h2>Personal Notes from General Conference</h2>
-    <p>This site collects personal study notes, key quotes, and scripture references from each talk. Use the form below to add your own notes as you listen, and share this page with others who are studying conference messages.</p>
-  </section>
+<div class="modal-overlay" id="signup-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('signup-modal')">✕</button>
+    <h2>Join the Community</h2>
+    <p>Create an account to add thoughts, reactions, and submit talk summaries.</p>
+    <div id="signup-msg"></div>
+    <div class="form-group"><label>Display Name</label><input type="text" id="signup-name" placeholder="Your name" /></div>
+    <div class="form-group"><label>Email</label><input type="email" id="signup-email" placeholder="your@email.com" /></div>
+    <div class="form-group"><label>Password</label><input type="password" id="signup-pass" placeholder="At least 6 characters" /></div>
+    <button class="btn btn-gold" style="width:100%;justify-content:center;margin-top:8px" onclick="doSignup()">Create Account</button>
+    <p style="text-align:center;margin-top:14px;font-size:0.8rem;color:var(--text-soft)">Have an account? <span style="color:var(--gold);cursor:pointer" onclick="closeModal('signup-modal');openModal('login-modal')">Sign in</span></p>
+  </div>
+</div>
 
-  <!-- ===== SATURDAY MORNING ===== -->
-  <section class="session" id="sat-morning" aria-label="Saturday Morning Session">
-    <div class="session-header">
-      <span class="session-badge">Session 1</span>
-      <h2 class="session-title">Saturday Morning</h2>
-    </div>
+<!-- ADD CONFERENCE MODAL -->
+<div class="modal-overlay" id="conf-modal">
+  <div class="modal">
+    <button class="modal-close" onclick="closeModal('conf-modal')">✕</button>
+    <h2>New Conference</h2>
+    <p>Add a new General Conference period.</p>
+    <div id="conf-msg"></div>
+    <div class="form-group"><label>Title</label><input type="text" id="conf-title" placeholder="April 2026 General Conference" /></div>
+    <div class="form-group"><label>Date</label><input type="text" id="conf-date" placeholder="April 5–6, 2026" /></div>
+    <div class="form-group"><label>Description (optional)</label><textarea id="conf-desc" placeholder="Brief description..."></textarea></div>
+    <button class="btn btn-gold" style="width:100%;justify-content:center;margin-top:8px" onclick="addConference()">Add Conference</button>
+  </div>
+</div>
 
-    <!-- EXAMPLE TALK CARD -->
-    <article class="talk-card" itemscope itemtype="https://schema.org/Article">
-      <h3 class="talk-speaker" itemprop="author">Speaker Name</h3>
-      <p class="talk-title" itemprop="headline">"Talk Title Here"</p>
-
-      <p class="section-label">Summary</p>
-      <p class="talk-summary" itemprop="description">
-        Replace this with your summary of the talk. What was the main message? What principle or doctrine was taught? How did it apply to everyday life?
-      </p>
-
-      <p class="section-label">Key Quotes</p>
-      <ul class="quotes-list">
-        <li>Paste a memorable quote from the talk here.</li>
-        <li>Add another powerful quote here.</li>
-      </ul>
-
-      <p class="section-label">Scripture References</p>
-      <div class="scripture-tags">
-        <span class="scripture-tag">John 3:16</span>
-        <span class="scripture-tag">Mosiah 3:19</span>
-        <span class="scripture-tag">D&amp;C 58:27</span>
-      </div>
-    </article>
-
-    <!-- Second example card -->
-    <article class="talk-card" itemscope itemtype="https://schema.org/Article">
-      <h3 class="talk-speaker" itemprop="author">Speaker Name</h3>
-      <p class="talk-title" itemprop="headline">"Talk Title Here"</p>
-
-      <p class="section-label">Summary</p>
-      <p class="talk-summary" itemprop="description">
-        Your summary goes here. Keep it concise — 2 to 4 sentences capturing the heart of the message.
-      </p>
-
-      <p class="section-label">Key Quotes</p>
-      <ul class="quotes-list">
-        <li>Add a quote from this speaker here.</li>
-      </ul>
-
-      <p class="section-label">Scripture References</p>
-      <div class="scripture-tags">
-        <span class="scripture-tag">Alma 7:11</span>
-      </div>
-    </article>
-
-    <div id="dynamic-talks-sat-morning"></div>
-  </section>
-
-  <!-- ===== SATURDAY AFTERNOON ===== -->
-  <section class="session" id="sat-afternoon" aria-label="Saturday Afternoon Session">
-    <div class="session-header">
-      <span class="session-badge">Session 2</span>
-      <h2 class="session-title">Saturday Afternoon</h2>
-    </div>
-    <article class="talk-card" itemscope itemtype="https://schema.org/Article">
-      <h3 class="talk-speaker" itemprop="author">Speaker Name</h3>
-      <p class="talk-title" itemprop="headline">"Talk Title Here"</p>
-      <p class="section-label">Summary</p>
-      <p class="talk-summary" itemprop="description">Your notes from this session will go here.</p>
-      <p class="section-label">Key Quotes</p>
-      <ul class="quotes-list"><li>Key quote here.</li></ul>
-      <p class="section-label">Scripture References</p>
-      <div class="scripture-tags"><span class="scripture-tag">Isaiah 40:31</span></div>
-    </article>
-    <div id="dynamic-talks-sat-afternoon"></div>
-  </section>
-
-  <!-- ===== SUNDAY MORNING ===== -->
-  <section class="session" id="sun-morning" aria-label="Sunday Morning Session">
-    <div class="session-header">
-      <span class="session-badge">Session 3</span>
-      <h2 class="session-title">Sunday Morning</h2>
-    </div>
-    <article class="talk-card" itemscope itemtype="https://schema.org/Article">
-      <h3 class="talk-speaker" itemprop="author">Speaker Name</h3>
-      <p class="talk-title" itemprop="headline">"Talk Title Here"</p>
-      <p class="section-label">Summary</p>
-      <p class="talk-summary" itemprop="description">Add your notes from the Sunday morning session here.</p>
-      <p class="section-label">Key Quotes</p>
-      <ul class="quotes-list"><li>Key quote here.</li></ul>
-      <p class="section-label">Scripture References</p>
-      <div class="scripture-tags"><span class="scripture-tag">3 Nephi 27:27</span></div>
-    </article>
-    <div id="dynamic-talks-sun-morning"></div>
-  </section>
-
-  <!-- ===== SUNDAY AFTERNOON ===== -->
-  <section class="session" id="sun-afternoon" aria-label="Sunday Afternoon Session">
-    <div class="session-header">
-      <span class="session-badge">Session 4</span>
-      <h2 class="session-title">Sunday Afternoon</h2>
-    </div>
-    <article class="talk-card" itemscope itemtype="https://schema.org/Article">
-      <h3 class="talk-speaker" itemprop="author">Speaker Name</h3>
-      <p class="talk-title" itemprop="headline">"Talk Title Here"</p>
-      <p class="section-label">Summary</p>
-      <p class="talk-summary" itemprop="description">Add your notes from the Sunday afternoon session here.</p>
-      <p class="section-label">Key Quotes</p>
-      <ul class="quotes-list"><li>Key quote here.</li></ul>
-      <p class="section-label">Scripture References</p>
-      <div class="scripture-tags"><span class="scripture-tag">Moroni 10:4</span></div>
-    </article>
-    <div id="dynamic-talks-sun-afternoon"></div>
-  </section>
-
-</div><!-- /container -->
-
-<!-- ===== ADD A TALK FORM ===== -->
-<section class="add-section" id="add-talk" aria-label="Add talk notes">
-  <div class="container">
+<!-- ADD TALK MODAL -->
+<div class="modal-overlay" id="talk-modal">
+  <div class="modal" style="max-width:560px">
+    <button class="modal-close" onclick="closeModal('talk-modal')">✕</button>
     <h2>Add a Talk</h2>
-    <p>Paste notes from a talk you just listened to and it will appear on the page instantly.</p>
-
-    <div class="form-grid">
-      <div class="form-group">
-        <label for="speaker">Speaker Name</label>
-        <input type="text" id="speaker" placeholder="Elder / Sister / President..." />
-      </div>
-      <div class="form-group">
-        <label for="talk-title">Talk Title</label>
-        <input type="text" id="talk-title" placeholder="Title of the talk" />
-      </div>
-      <div class="form-group">
-        <label for="session-select">Session</label>
-        <select id="session-select">
-          <option value="sat-morning">Saturday Morning</option>
-          <option value="sat-afternoon">Saturday Afternoon</option>
-          <option value="sun-morning">Sunday Morning</option>
-          <option value="sun-afternoon">Sunday Afternoon</option>
+    <p>Add an official talk to this conference.</p>
+    <div id="talk-msg"></div>
+    <div class="form-grid2">
+      <div class="form-group"><label>Speaker</label><input type="text" id="talk-speaker" placeholder="Elder / Sister..." /></div>
+      <div class="form-group"><label>Session</label>
+        <select id="talk-session">
+          <option value="Saturday Morning">Saturday Morning</option>
+          <option value="Saturday Afternoon">Saturday Afternoon</option>
+          <option value="Sunday Morning">Sunday Morning</option>
+          <option value="Sunday Afternoon">Sunday Afternoon</option>
         </select>
       </div>
-      <div class="form-group">
-        <label for="scriptures">Scripture References</label>
-        <input type="text" id="scriptures" placeholder="e.g. John 3:16, Alma 7:11" />
-      </div>
-      <div class="form-group full">
-        <label for="summary">Summary</label>
-        <textarea id="summary" rows="4" placeholder="What was the main message of this talk?"></textarea>
-      </div>
-      <div class="form-group full">
-        <label for="quotes">Key Quotes (one per line)</label>
-        <textarea id="quotes" rows="4" placeholder="Paste memorable quotes here, one per line..."></textarea>
-      </div>
+      <div class="form-group full"><label>Talk Title</label><input type="text" id="talk-title-input" placeholder="Title of the talk" /></div>
+      <div class="form-group full"><label>Summary</label><textarea id="talk-summary" rows="4" placeholder="Main message of the talk..."></textarea></div>
+      <div class="form-group full"><label>Key Quotes (one per line)</label><textarea id="talk-quotes" rows="3" placeholder="Memorable quotes..."></textarea></div>
+      <div class="form-group full"><label>Scripture References (comma separated)</label><input type="text" id="talk-scriptures" placeholder="John 3:16, Mosiah 3:19" /></div>
     </div>
-
-    <button class="btn-add" onclick="addTalk()">Add to Page</button>
+    <button class="btn btn-gold" style="width:100%;justify-content:center;margin-top:12px" onclick="addTalk()">Add Talk</button>
   </div>
-</section>
+</div>
 
-<!-- ===== SEO TIPS ===== -->
-<section class="seo-section" aria-label="How to share and improve SEO">
-  <div class="container">
-    <h2>Tips to Help Others Find This Page</h2>
-    <div class="seo-tips">
-      <div class="seo-tip">
-        <h3>🔗 Share the Link</h3>
-        <p>Post on Facebook groups, Reddit (r/latterdaysaints), or your ward's group chat with a short description.</p>
+<!-- MAIN PAGES -->
+<div id="app">
+
+  <!-- HOME PAGE -->
+  <div id="page-home" class="page">
+    <header>
+      <p class="eyebrow">Community Notes & Summaries</p>
+      <h1>General Conference<br><em>Summaries</em></h1>
+      <div class="gold-line"></div>
+      <p class="header-sub" style="margin-top:16px">Talk summaries, key quotes, scripture references, and community insights from every General Conference.</p>
+    </header>
+    <div class="container" style="padding-top:48px">
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px">
+        <div>
+          <h2 class="page-title">Conferences</h2>
+          <p class="page-sub">Select a conference to view talk summaries.</p>
+        </div>
+        <div id="add-conf-btn" style="display:none">
+          <button class="btn btn-gold" onclick="openModal('conf-modal')">+ Add Conference</button>
+        </div>
       </div>
-      <div class="seo-tip">
-        <h3>📝 Use Speaker Names</h3>
-        <p>Google indexes speaker names. Including "Elder [Name] April 2026" helps people searching for a specific talk find your page.</p>
-      </div>
-      <div class="seo-tip">
-        <h3>📍 Submit to Google</h3>
-        <p>Visit <a href="https://search.google.com/search-console" target="_blank">Google Search Console</a> and submit your URL so Google indexes it faster.</p>
-      </div>
-      <div class="seo-tip">
-        <h3>#️⃣ Use Hashtags</h3>
-        <p>When sharing, use <strong>#GeneralConference</strong> and <strong>#LDS</strong> on social media to reach the right audience.</p>
+      <div id="conferences-list" class="conf-grid">
+        <div class="loading-center"><div class="spinner"></div></div>
       </div>
     </div>
   </div>
-</section>
-</main>
 
-<!-- ===== FOOTER ===== -->
+  <!-- CONFERENCE PAGE -->
+  <div id="page-conference" class="page" style="display:none">
+    <div class="container">
+      <button class="back-link" onclick="showPage('home')">← All Conferences</button>
+      <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px;margin-bottom:8px">
+        <div>
+          <h1 class="page-title" id="conf-page-title">Conference</h1>
+          <p class="page-sub" id="conf-page-sub"></p>
+        </div>
+        <div style="display:flex;gap:10px;flex-wrap:wrap" id="conf-admin-btns"></div>
+      </div>
+
+      <div class="session-tabs" id="session-tabs"></div>
+      <div id="talks-list"></div>
+
+      <!-- Submit a summary -->
+      <div class="submit-section" id="submit-section">
+        <h3>Submit Your Summary</h3>
+        <p>Have notes from a talk? Submit them for review — your insights help the whole community.</p>
+        <div id="submit-msg"></div>
+        <div class="form-grid2">
+          <div class="form-group"><label>Speaker</label><input type="text" id="sub-speaker" placeholder="Speaker name" /></div>
+          <div class="form-group"><label>Session</label>
+            <select id="sub-session">
+              <option value="Saturday Morning">Saturday Morning</option>
+              <option value="Saturday Afternoon">Saturday Afternoon</option>
+              <option value="Sunday Morning">Sunday Morning</option>
+              <option value="Sunday Afternoon">Sunday Afternoon</option>
+            </select>
+          </div>
+          <div class="form-group full"><label>Talk Title</label><input type="text" id="sub-title" placeholder="Title of the talk" /></div>
+          <div class="form-group full"><label>Your Summary</label><textarea id="sub-summary" rows="4" placeholder="What was the main message?"></textarea></div>
+          <div class="form-group full"><label>Key Quotes (one per line)</label><textarea id="sub-quotes" rows="3" placeholder="Memorable quotes..."></textarea></div>
+          <div class="form-group full"><label>Scripture References</label><input type="text" id="sub-scriptures" placeholder="John 3:16, Alma 7:11" /></div>
+        </div>
+        <button class="btn btn-outline" style="margin-top:12px" onclick="submitSummary()">Submit for Review</button>
+      </div>
+
+      <!-- Admin: Pending submissions -->
+      <div id="pending-section" style="display:none;margin-top:40px">
+        <div class="divider"></div>
+        <h3 style="font-family:'Cormorant Garamond',serif;font-size:1.2rem;color:var(--gold2);margin-bottom:16px">Pending Submissions</h3>
+        <div id="pending-list"></div>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /app -->
+
 <footer>
-  <p>General Conference Notes · April 2026 · Not an official publication of The Church of Jesus Christ of Latter-day Saints</p>
-  <p style="margin-top:8px;">Built with love for personal study &amp; sharing · <a href="#">Edit your notes</a></p>
+  <p>General Conference Summaries · Community notes, not an official Church publication</p>
+  <p style="margin-top:6px"><a href="https://www.churchofjesuschrist.org/study/general-conference" target="_blank">Official talks at ChurchofJesusChrist.org</a></p>
 </footer>
 
-<!-- ===== JAVASCRIPT ===== -->
 <script>
-  function addTalk() {
-    const speaker   = document.getElementById('speaker').value.trim();
-    const title     = document.getElementById('talk-title').value.trim();
-    const session   = document.getElementById('session-select').value;
-    const scriptures = document.getElementById('scriptures').value.trim();
-    const summary   = document.getElementById('summary').value.trim();
-    const quotesRaw = document.getElementById('quotes').value.trim();
+// ─── SUPABASE INIT ───────────────────────────────────────────────
+const SUPABASE_URL = 'https://ccmpnauskmujrpwffmmz.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNjbXBuYXVza211anJwd2ZmbW16Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzMzA0NjgsImV4cCI6MjA5MDkwNjQ2OH0.UoCm-D9rrcjzIfborRTC0allzUqEE6rsO8nK-f15dKY';
+const sb = supabase.createClient(SUPABASE_URL, SUPABASE_KEY);
 
-    if (!speaker || !summary) {
-      alert('Please fill in at least the Speaker Name and Summary fields.');
-      return;
-    }
+// ─── STATE ───────────────────────────────────────────────────────
+let currentUser = null;
+let currentUserMeta = null;
+let currentConf = null;
+let currentSession = 'Saturday Morning';
+let isAdmin = false;
 
-    const quotes = quotesRaw ? quotesRaw.split('\n').filter(q => q.trim()) : [];
-    const scriptureList = scriptures ? scriptures.split(',').map(s => s.trim()).filter(Boolean) : [];
+// ─── INIT ────────────────────────────────────────────────────────
+async function init() {
+  await setupTables();
+  const { data: { session } } = await sb.auth.getSession();
+  if (session) await onLogin(session.user);
+  loadConferences();
+}
 
-    const card = document.createElement('article');
-    card.className = 'talk-card new-card';
-    card.setAttribute('itemscope', '');
-    card.setAttribute('itemtype', 'https://schema.org/Article');
+// ─── DATABASE SETUP ──────────────────────────────────────────────
+async function setupTables() {
+  // Create tables via RPC if they don't exist
+  // We'll use direct inserts and catch errors gracefully
+}
 
-    const quotesHTML = quotes.length
-      ? `<p class="section-label">Key Quotes</p>
-         <ul class="quotes-list">${quotes.map(q => `<li>${escHtml(q)}</li>`).join('')}</ul>`
-      : '';
+// ─── AUTH ────────────────────────────────────────────────────────
+async function doLogin() {
+  const email = document.getElementById('login-email').value.trim();
+  const pass  = document.getElementById('login-pass').value;
+  setMsg('login-msg', '');
+  const { data, error } = await sb.auth.signInWithPassword({ email, password: pass });
+  if (error) return setMsg('login-msg', error.message, true);
+  await onLogin(data.user);
+  closeModal('login-modal');
+}
 
-    const scriptureHTML = scriptureList.length
-      ? `<p class="section-label">Scripture References</p>
-         <div class="scripture-tags">${scriptureList.map(s => `<span class="scripture-tag">${escHtml(s)}</span>`).join('')}</div>`
-      : '';
+async function doSignup() {
+  const name  = document.getElementById('signup-name').value.trim();
+  const email = document.getElementById('signup-email').value.trim();
+  const pass  = document.getElementById('signup-pass').value;
+  if (!name) return setMsg('signup-msg', 'Please enter a display name.', true);
+  setMsg('signup-msg', '');
+  const { data, error } = await sb.auth.signUp({ email, password: pass, options: { data: { display_name: name } } });
+  if (error) return setMsg('signup-msg', error.message, true);
+  setMsg('signup-msg', 'Account created! Check your email to confirm, then sign in.', false);
+}
 
-    card.innerHTML = `
-      <h3 class="talk-speaker" itemprop="author">${escHtml(speaker)}</h3>
-      <p class="talk-title" itemprop="headline">${title ? '"' + escHtml(title) + '"' : ''}</p>
-      <p class="section-label">Summary</p>
-      <p class="talk-summary" itemprop="description">${escHtml(summary)}</p>
-      ${quotesHTML}
-      ${scriptureHTML}
+async function doLogout() {
+  await sb.auth.signOut();
+  currentUser = null; currentUserMeta = null; isAdmin = false;
+  renderNav();
+  showPage('home');
+  loadConferences();
+}
+
+async function onLogin(user) {
+  currentUser = user;
+  // Check if admin (you can add your email here)
+  const adminEmails = ['jaredwilliamross@gmail.com']; // ADD YOUR EMAIL
+  isAdmin = adminEmails.includes(user.email);
+  renderNav();
+  if (currentConf) renderAdminBtns();
+}
+
+function renderNav() {
+  const el = document.getElementById('nav-right');
+  if (currentUser) {
+    const name = currentUser.user_metadata?.display_name || currentUser.email.split('@')[0];
+    const initials = name.slice(0,2).toUpperCase();
+    el.innerHTML = `
+      <span class="user-chip"><span class="user-dot">${initials}</span>${name}${isAdmin ? ' ⭐' : ''}</span>
+      <button class="btn btn-ghost btn-sm" onclick="doLogout()">Sign Out</button>
     `;
-
-    const target = document.getElementById('dynamic-talks-' + session);
-    target.appendChild(card);
-
-    // Clear form
-    ['speaker','talk-title','scriptures','summary','quotes'].forEach(id => {
-      document.getElementById(id).value = '';
-    });
-
-    // Scroll to new card
-    card.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  } else {
+    el.innerHTML = `
+      <button class="btn btn-outline btn-sm" onclick="openModal('login-modal')">Sign In</button>
+      <button class="btn btn-gold btn-sm" onclick="openModal('signup-modal')">Join</button>
+    `;
   }
+}
 
-  function escHtml(str) {
-    return str.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+// ─── CONFERENCES ─────────────────────────────────────────────────
+async function loadConferences() {
+  document.getElementById('add-conf-btn').style.display = isAdmin ? 'block' : 'none';
+  const { data, error } = await sb.from('conferences').select('*').order('created_at', { ascending: false });
+  const el = document.getElementById('conferences-list');
+  if (error || !data?.length) {
+    el.innerHTML = `<div class="empty-state"><p>No conferences yet.${isAdmin ? ' Add the first one!' : ''}</p></div>`;
+    return;
   }
+  el.innerHTML = data.map(c => `
+    <div class="conf-card fade-up" onclick="openConference('${c.id}')">
+      <div class="conf-card-left">
+        <h2>${esc(c.title)}</h2>
+        <p>${esc(c.date_label || '')} ${c.description ? '· ' + esc(c.description) : ''}</p>
+      </div>
+      <div class="conf-card-right">
+        <span class="talk-count" id="tc-${c.id}">Loading talks...</span>
+        <span class="arrow">→</span>
+      </div>
+    </div>
+  `).join('');
+  // Load talk counts
+  data.forEach(async c => {
+    const { count } = await sb.from('talks').select('*', { count: 'exact', head: true }).eq('conference_id', c.id).eq('status', 'approved');
+    const el2 = document.getElementById('tc-' + c.id);
+    if (el2) el2.textContent = (count || 0) + ' talks';
+  });
+}
+
+async function addConference() {
+  const title = document.getElementById('conf-title').value.trim();
+  const date  = document.getElementById('conf-date').value.trim();
+  const desc  = document.getElementById('conf-desc').value.trim();
+  if (!title) return setMsg('conf-msg', 'Title is required.', true);
+  const { error } = await sb.from('conferences').insert({ title, date_label: date, description: desc });
+  if (error) return setMsg('conf-msg', error.message, true);
+  closeModal('conf-modal');
+  document.getElementById('conf-title').value = '';
+  document.getElementById('conf-date').value = '';
+  document.getElementById('conf-desc').value = '';
+  loadConferences();
+}
+
+async function deleteConference(id) {
+  if (!confirm('Delete this conference and all its talks?')) return;
+  await sb.from('talks').delete().eq('conference_id', id);
+  await sb.from('conferences').delete().eq('id', id);
+  showPage('home');
+  loadConferences();
+}
+
+// ─── CONFERENCE PAGE ─────────────────────────────────────────────
+async function openConference(id) {
+  currentConf = id;
+  const { data: conf } = await sb.from('conferences').select('*').eq('id', id).single();
+  document.getElementById('conf-page-title').textContent = conf.title;
+  document.getElementById('conf-page-sub').textContent = conf.date_label || '';
+  renderAdminBtns();
+  renderSessionTabs();
+  showPage('conference');
+  loadTalks();
+  // Show submit section only for logged-in users
+  document.getElementById('submit-section').style.display = currentUser ? 'block' : 'none';
+}
+
+function renderAdminBtns() {
+  const el = document.getElementById('conf-admin-btns');
+  if (!el) return;
+  if (isAdmin) {
+    el.innerHTML = `
+      <button class="btn btn-outline btn-sm" onclick="openModal('talk-modal')">+ Add Talk</button>
+      <button class="btn btn-danger btn-sm" onclick="deleteConference('${currentConf}')">Delete Conference</button>
+    `;
+    document.getElementById('pending-section').style.display = 'block';
+    loadPending();
+  } else {
+    el.innerHTML = '';
+    document.getElementById('pending-section').style.display = 'none';
+  }
+}
+
+const SESSIONS = ['Saturday Morning','Saturday Afternoon','Sunday Morning','Sunday Afternoon'];
+
+function renderSessionTabs() {
+  const el = document.getElementById('session-tabs');
+  el.innerHTML = SESSIONS.map(s => `
+    <button class="session-tab ${s === currentSession ? 'active' : ''}" onclick="switchSession('${s}')">${s}</button>
+  `).join('');
+}
+
+function switchSession(s) {
+  currentSession = s;
+  renderSessionTabs();
+  loadTalks();
+}
+
+async function loadTalks() {
+  const el = document.getElementById('talks-list');
+  el.innerHTML = '<div class="loading-center"><div class="spinner"></div></div>';
+  const { data } = await sb.from('talks').select('*').eq('conference_id', currentConf).eq('session', currentSession).eq('status', 'approved').order('created_at');
+  if (!data?.length) {
+    el.innerHTML = `<div class="empty-state"><p>No talks added for this session yet.</p></div>`;
+    return;
+  }
+  el.innerHTML = '';
+  for (const talk of data) {
+    el.appendChild(await buildTalkCard(talk));
+  }
+}
+
+async function buildTalkCard(talk) {
+  const quotes = talk.quotes ? talk.quotes.split('\n').filter(Boolean) : [];
+  const scriptures = talk.scriptures ? talk.scriptures.split(',').map(s=>s.trim()).filter(Boolean) : [];
+
+  // Load reactions
+  const { data: reacts } = await sb.from('reactions').select('emoji, user_id').eq('talk_id', talk.id);
+  const emojiList = ['🙏','❤️','💡','✨'];
+  const reactionMap = {};
+  emojiList.forEach(e => reactionMap[e] = { count: 0, mine: false });
+  (reacts || []).forEach(r => {
+    if (reactionMap[r.emoji]) {
+      reactionMap[r.emoji].count++;
+      if (currentUser && r.user_id === currentUser.id) reactionMap[r.emoji].mine = true;
+    }
+  });
+
+  // Load comment count
+  const { count: commentCount } = await sb.from('comments').select('*', { count: 'exact', head: true }).eq('talk_id', talk.id);
+
+  const div = document.createElement('article');
+  div.className = 'talk-card fade-up';
+  div.id = 'talk-' + talk.id;
+  div.innerHTML = `
+    <div class="talk-header">
+      <div>
+        <div class="talk-speaker">${esc(talk.speaker)}</div>
+        ${talk.title ? `<div class="talk-title-text">"${esc(talk.title)}"</div>` : ''}
+      </div>
+      <div class="talk-actions">
+        ${isAdmin ? `<button class="btn btn-danger btn-sm" onclick="deleteTalk('${talk.id}')">Delete</button>` : ''}
+      </div>
+    </div>
+    ${talk.summary ? `<div class="section-label">Summary</div><p class="talk-summary">${esc(talk.summary)}</p>` : ''}
+    ${quotes.length ? `<div class="section-label">Key Quotes</div><ul class="quotes-list">${quotes.map(q=>`<li>${esc(q)}</li>`).join('')}</ul>` : ''}
+    ${scriptures.length ? `<div class="section-label">Scripture References</div><div class="scripture-tags">${scriptures.map(s=>`<span class="scripture-tag">${esc(s)}</span>`).join('')}</div>` : ''}
+    <div class="reactions-bar">
+      ${emojiList.map(e => `
+        <button class="reaction-btn ${reactionMap[e].mine ? 'reacted' : ''}" onclick="toggleReaction('${talk.id}','${e}',this)">
+          ${e} <span class="reaction-count">${reactionMap[e].count || ''}</span>
+        </button>
+      `).join('')}
+      <button class="comments-toggle" onclick="toggleComments('${talk.id}')">
+        💬 ${commentCount || 0} ${commentCount === 1 ? 'comment' : 'comments'}
+      </button>
+    </div>
+    <div class="comments-section" id="comments-${talk.id}">
+      <div id="comments-list-${talk.id}"></div>
+      ${currentUser ? `
+        <div class="comment-form">
+          <input type="text" id="comment-input-${talk.id}" placeholder="Add your thoughts..." onkeydown="if(event.key==='Enter')postComment('${talk.id}')" />
+          <button class="btn btn-outline btn-sm" onclick="postComment('${talk.id}')">Post</button>
+        </div>
+      ` : `<p style="font-size:0.82rem;color:var(--text-soft);margin-top:10px"><span style="color:var(--gold);cursor:pointer" onclick="openModal('login-modal')">Sign in</span> to add your thoughts.</p>`}
+    </div>
+  `;
+  return div;
+}
+
+async function toggleComments(talkId) {
+  const el = document.getElementById('comments-' + talkId);
+  if (el.classList.contains('open')) { el.classList.remove('open'); return; }
+  el.classList.add('open');
+  loadComments(talkId);
+}
+
+async function loadComments(talkId) {
+  const el = document.getElementById('comments-list-' + talkId);
+  el.innerHTML = '<div class="spinner"></div>';
+  const { data } = await sb.from('comments').select('*').eq('talk_id', talkId).order('created_at');
+  if (!data?.length) { el.innerHTML = '<p style="font-size:0.82rem;color:var(--text-soft)">No comments yet. Be the first!</p>'; return; }
+  el.innerHTML = data.map(c => `
+    <div class="comment">
+      <div class="comment-meta"><strong>${esc(c.display_name || 'Member')}</strong> · ${timeAgo(c.created_at)}
+        ${isAdmin ? `<button class="btn btn-danger" style="margin-left:10px;padding:2px 8px;font-size:0.65rem" onclick="deleteComment('${c.id}','${talkId}')">Remove</button>` : ''}
+      </div>
+      <div class="comment-body">${esc(c.body)}</div>
+    </div>
+  `).join('');
+}
+
+async function postComment(talkId) {
+  if (!currentUser) return openModal('login-modal');
+  const input = document.getElementById('comment-input-' + talkId);
+  const body = input.value.trim();
+  if (!body) return;
+  const name = currentUser.user_metadata?.display_name || currentUser.email.split('@')[0];
+  await sb.from('comments').insert({ talk_id: talkId, user_id: currentUser.id, display_name: name, body });
+  input.value = '';
+  loadComments(talkId);
+  // Update count display
+  const { count } = await sb.from('comments').select('*', { count: 'exact', head: true }).eq('talk_id', talkId);
+  const toggle = document.querySelector(`#talk-${talkId} .comments-toggle`);
+  if (toggle) toggle.textContent = `💬 ${count} ${count === 1 ? 'comment' : 'comments'}`;
+}
+
+async function deleteComment(commentId, talkId) {
+  await sb.from('comments').delete().eq('id', commentId);
+  loadComments(talkId);
+}
+
+async function toggleReaction(talkId, emoji, btn) {
+  if (!currentUser) return openModal('login-modal');
+  const { data: existing } = await sb.from('reactions').select('id').eq('talk_id', talkId).eq('user_id', currentUser.id).eq('emoji', emoji).single();
+  const countEl = btn.querySelector('.reaction-count');
+  let count = parseInt(countEl.textContent) || 0;
+  if (existing) {
+    await sb.from('reactions').delete().eq('id', existing.id);
+    btn.classList.remove('reacted');
+    countEl.textContent = count > 1 ? count - 1 : '';
+  } else {
+    await sb.from('reactions').insert({ talk_id: talkId, user_id: currentUser.id, emoji });
+    btn.classList.add('reacted');
+    countEl.textContent = count + 1;
+  }
+}
+
+// ─── TALKS ───────────────────────────────────────────────────────
+async function addTalk() {
+  const speaker   = document.getElementById('talk-speaker').value.trim();
+  const session   = document.getElementById('talk-session').value;
+  const title     = document.getElementById('talk-title-input').value.trim();
+  const summary   = document.getElementById('talk-summary').value.trim();
+  const quotes    = document.getElementById('talk-quotes').value.trim();
+  const scriptures= document.getElementById('talk-scriptures').value.trim();
+  if (!speaker || !summary) return setMsg('talk-msg', 'Speaker and summary are required.', true);
+  const { error } = await sb.from('talks').insert({ conference_id: currentConf, speaker, session, title, summary, quotes, scriptures, status: 'approved' });
+  if (error) return setMsg('talk-msg', error.message, true);
+  closeModal('talk-modal');
+  ['talk-speaker','talk-title-input','talk-summary','talk-quotes','talk-scriptures'].forEach(id => document.getElementById(id).value = '');
+  if (session === currentSession) loadTalks();
+}
+
+async function deleteTalk(id) {
+  if (!confirm('Delete this talk?')) return;
+  await sb.from('comments').delete().eq('talk_id', id);
+  await sb.from('reactions').delete().eq('talk_id', id);
+  await sb.from('talks').delete().eq('id', id);
+  loadTalks();
+}
+
+// ─── SUBMISSIONS ─────────────────────────────────────────────────
+async function submitSummary() {
+  if (!currentUser) return openModal('login-modal');
+  const speaker  = document.getElementById('sub-speaker').value.trim();
+  const session  = document.getElementById('sub-session').value;
+  const title    = document.getElementById('sub-title').value.trim();
+  const summary  = document.getElementById('sub-summary').value.trim();
+  const quotes   = document.getElementById('sub-quotes').value.trim();
+  const scriptures = document.getElementById('sub-scriptures').value.trim();
+  if (!speaker || !summary) return setMsg('submit-msg', 'Speaker and summary are required.', true);
+  const name = currentUser.user_metadata?.display_name || currentUser.email.split('@')[0];
+  const { error } = await sb.from('talks').insert({ conference_id: currentConf, speaker, session, title, summary, quotes, scriptures, status: 'pending', submitted_by: name });
+  if (error) return setMsg('submit-msg', error.message, true);
+  setMsg('submit-msg', 'Submitted! An editor will review your notes shortly.', false);
+  ['sub-speaker','sub-title','sub-summary','sub-quotes','sub-scriptures'].forEach(id => document.getElementById(id).value = '');
+}
+
+async function loadPending() {
+  const { data } = await sb.from('talks').select('*').eq('conference_id', currentConf).eq('status', 'pending').order('created_at');
+  const el = document.getElementById('pending-list');
+  if (!data?.length) { el.innerHTML = '<p style="color:var(--text-soft);font-size:0.85rem">No pending submissions.</p>'; return; }
+  el.innerHTML = data.map(t => `
+    <div class="pending-card">
+      <span class="pending-badge">Pending Review</span>
+      <div style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;color:var(--cream);margin-bottom:4px">${esc(t.speaker)} — ${esc(t.session)}</div>
+      ${t.title ? `<div style="font-size:0.82rem;color:var(--gold);font-style:italic;margin-bottom:8px">"${esc(t.title)}"</div>` : ''}
+      <p style="font-size:0.88rem;color:var(--cream2);margin-bottom:12px">${esc(t.summary)}</p>
+      <p style="font-size:0.75rem;color:var(--text-soft);margin-bottom:12px">Submitted by ${esc(t.submitted_by || 'Anonymous')}</p>
+      <div style="display:flex;gap:10px">
+        <button class="btn btn-gold btn-sm" onclick="approveTalk('${t.id}')">✓ Approve</button>
+        <button class="btn btn-danger btn-sm" onclick="rejectTalk('${t.id}')">✕ Reject</button>
+      </div>
+    </div>
+  `).join('');
+}
+
+async function approveTalk(id) {
+  await sb.from('talks').update({ status: 'approved' }).eq('id', id);
+  loadPending();
+  loadTalks();
+}
+
+async function rejectTalk(id) {
+  await sb.from('talks').delete().eq('id', id);
+  loadPending();
+}
+
+// ─── UTILS ───────────────────────────────────────────────────────
+function showPage(name) {
+  document.querySelectorAll('[id^="page-"]').forEach(el => el.style.display = 'none');
+  document.getElementById('page-' + name).style.display = 'block';
+  window.scrollTo(0, 0);
+  if (name === 'home') loadConferences();
+}
+
+function openModal(id) { document.getElementById(id).classList.add('open'); }
+function closeModal(id) { document.getElementById(id).classList.remove('open'); }
+document.querySelectorAll('.modal-overlay').forEach(m => m.addEventListener('click', e => { if (e.target === m) m.classList.remove('open'); }));
+
+function setMsg(id, text, isErr) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.innerHTML = text ? `<div class="msg ${isErr ? 'msg-err' : 'msg-ok'}">${text}</div>` : '';
+}
+
+function esc(str) {
+  if (!str) return '';
+  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function timeAgo(ts) {
+  const diff = (Date.now() - new Date(ts)) / 1000;
+  if (diff < 60) return 'just now';
+  if (diff < 3600) return Math.floor(diff/60) + 'm ago';
+  if (diff < 86400) return Math.floor(diff/3600) + 'h ago';
+  return Math.floor(diff/86400) + 'd ago';
+}
+
+init();
 </script>
-
 </body>
 </html>
