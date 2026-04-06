@@ -4,1079 +4,399 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>General Conference Summaries | LDS Talk Notes & Quotes</title>
-  <meta name="description" content="Community notes, summaries, key quotes, and scripture references from LDS General Conference. Subscribe to get 5 minutes of weekly insights between conferences." />
-  <meta name="keywords" content="General Conference summaries, LDS talk notes, General Conference quotes, LDS conference 2026, church conference summaries, between conferences newsletter" />
-  <link rel="canonical" href="https://www.generalconferencesummaries.com/" />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="General Conference Summaries | LDS Talk Notes & Quotes" />
-  <meta property="og:description" content="Community notes, summaries, and quotes from LDS General Conference. 5-minute weekly newsletter between conferences." />
-  <meta property="og:url" content="https://www.generalconferencesummaries.com/" />
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Blog","name":"General Conference Summaries","description":"Community LDS General Conference notes and summaries","url":"https://www.generalconferencesummaries.com"}</script>
+  <title>General Conference Summaries — April 2026</title>
+  <meta name="description" content="Summaries, key quotes, and scripture references from the 196th Annual General Conference of The Church of Jesus Christ of Latter-day Saints, Easter Weekend 2026." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,500;1,8..60,300;1,8..60,400&display=swap" rel="stylesheet" />
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PKB3T3YLP2"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-PKB3T3YLP2');</script>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
   <style>
-    :root{
-      --white:#fff;--bg:#f9f9f7;--surface:#fff;
-      --border:#e8e8e4;--border2:#d0d0c8;
-      --text:#1a1a1a;--text-soft:#6b6b6b;--text-lighter:#999;
-      --accent:#ff6719;--accent-soft:rgba(255,103,25,0.08);--accent-border:rgba(255,103,25,0.25);
-      --blue:#2563eb;--green:#16a34a;--red:#dc2626;--purple:#7c3aed;
-      --shadow-sm:0 1px 3px rgba(0,0,0,0.06);
-      --shadow:0 4px 16px rgba(0,0,0,0.08);
-      --shadow-lg:0 12px 40px rgba(0,0,0,0.12);
-      --r:8px;--r-sm:4px;
+    :root {
+      --cream: #faf8f3;
+      --cream2: #f3efe6;
+      --ink: #1a1510;
+      --ink2: #3d3628;
+      --ink3: #6b6050;
+      --gold: #b8860b;
+      --gold2: #d4a017;
+      --orange: #c44b1a;
+      --rule: #d9d0bc;
+      --white: #ffffff;
     }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-    html{scroll-behavior:smooth;}
-    body{background:var(--bg);color:var(--text);font-family:'Inter',-apple-system,sans-serif;font-weight:400;line-height:1.6;min-height:100vh;-webkit-font-smoothing:antialiased;}
-
-    /* NAV */
-    .topnav{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:0;z-index:300;display:flex;align-items:center;justify-content:space-between;padding:0 24px;height:58px;}
-    .nav-brand{display:flex;align-items:center;gap:10px;font-weight:700;font-size:0.95rem;color:var(--text);cursor:pointer;}
-    .nav-logo{width:32px;height:32px;background:var(--accent);border-radius:6px;display:flex;align-items:center;justify-content:center;color:white;font-size:0.8rem;font-weight:700;flex-shrink:0;}
-    .nav-right{display:flex;gap:8px;align-items:center;}
-
-    /* BUTTONS */
-    .btn{display:inline-flex;align-items:center;gap:6px;padding:8px 16px;border-radius:20px;font-family:inherit;font-size:0.875rem;font-weight:500;cursor:pointer;border:none;transition:all 0.15s;text-decoration:none;white-space:nowrap;}
-    .btn-primary{background:var(--accent);color:white;}.btn-primary:hover{background:#e55a10;}
-    .btn-secondary{background:var(--white);color:var(--text);border:1px solid var(--border2);}.btn-secondary:hover{background:var(--bg);}
-    .btn-ghost{background:none;color:var(--text-soft);border:1px solid var(--border);}.btn-ghost:hover{background:var(--bg);color:var(--text);}
-    .btn-approve{background:var(--green);color:white;}.btn-approve:hover{background:#15803d;}
-    .btn-red{background:none;color:var(--red);border:1px solid rgba(220,38,38,0.25);}.btn-red:hover{background:rgba(220,38,38,0.06);}
-    .btn-purple{background:var(--purple);color:white;}.btn-purple:hover{background:#6d28d9;}
-    .btn-sm{padding:6px 14px;font-size:0.82rem;}
-    .btn-xs{padding:4px 10px;font-size:0.75rem;border-radius:var(--r-sm);}
-
-    /* MODAL */
-    .modal-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.45);z-index:500;align-items:center;justify-content:center;padding:20px;backdrop-filter:blur(4px);}
-    .modal-overlay.open{display:flex;}
-    .modal{background:var(--white);border-radius:12px;padding:36px;width:100%;max-width:440px;box-shadow:var(--shadow-lg);position:relative;max-height:90vh;overflow-y:auto;}
-    .modal-wide{max-width:640px;}
-    .modal-close{position:absolute;top:14px;right:14px;background:var(--bg);border:none;width:28px;height:28px;border-radius:50%;cursor:pointer;font-size:0.85rem;color:var(--text-soft);display:flex;align-items:center;justify-content:center;}
-    .modal-close:hover{background:var(--border);}
-    .modal h2{font-size:1.2rem;font-weight:700;margin-bottom:4px;}
-    .modal-sub{color:var(--text-soft);font-size:0.875rem;margin-bottom:22px;}
-
-    /* FORMS */
-    .fg{margin-bottom:15px;}
-    .fg label{display:block;font-size:0.78rem;font-weight:600;color:var(--text);margin-bottom:5px;}
-    .fg input,.fg textarea,.fg select{width:100%;background:var(--white);border:1px solid var(--border2);border-radius:var(--r-sm);color:var(--text);font-family:inherit;font-size:0.9rem;padding:9px 12px;outline:none;transition:border-color 0.15s,box-shadow 0.15s;}
-    .fg input:focus,.fg textarea:focus,.fg select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,103,25,0.1);}
-    .fg input::placeholder,.fg textarea::placeholder{color:var(--text-lighter);}
-    .fg textarea{resize:vertical;min-height:90px;line-height:1.65;}
-    .fg-hint{font-size:0.74rem;color:var(--text-soft);margin-top:4px;}
-    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
-    @media(max-width:560px){.grid2{grid-template-columns:1fr;}}
-    .span2{grid-column:1/-1;}
-    .msg{font-size:0.82rem;padding:10px 14px;border-radius:var(--r-sm);margin-bottom:14px;}
-    .msg-err{background:#fef2f2;border:1px solid #fecaca;color:#b91c1c;}
-    .msg-ok{background:#f0fdf4;border:1px solid #bbf7d0;color:#15803d;}
-
-    /* LAYOUT */
-    .wrap{max-width:740px;margin:0 auto;padding:0 20px;}
-    .page{padding:36px 0 80px;}
-
-    /* ── NEWSLETTER HERO (Primary CTA) ── */
-    .newsletter-hero{
-      background:linear-gradient(135deg,#1a1a1a 0%,#2d1a0e 100%);
-      padding:64px 20px;text-align:center;position:relative;overflow:hidden;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--cream);
+      color: var(--ink);
+      font-family: 'Source Serif 4', Georgia, serif;
+      font-weight: 300;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
     }
-    .newsletter-hero::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse at 50% 0%,rgba(255,103,25,0.15) 0%,transparent 70%);pointer-events:none;}
-    .nh-eyebrow{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;color:var(--accent);background:rgba(255,103,25,0.1);border:1px solid rgba(255,103,25,0.3);padding:4px 14px;border-radius:20px;margin-bottom:20px;letter-spacing:0.04em;}
-    .nh-title{font-size:clamp(1.8rem,4.5vw,2.8rem);font-weight:700;color:white;line-height:1.15;letter-spacing:-0.02em;margin-bottom:10px;}
-    .nh-title span{color:var(--accent);}
-    .nh-sub{font-size:1rem;color:rgba(255,255,255,0.65);max-width:500px;margin:0 auto 32px;line-height:1.65;}
-    .nh-format{display:flex;gap:20px;justify-content:center;margin-bottom:32px;flex-wrap:wrap;}
-    .nh-pill{display:flex;align-items:center;gap:8px;background:rgba(255,255,255,0.06);border:1px solid rgba(255,255,255,0.1);border-radius:8px;padding:10px 18px;}
-    .nh-pill-num{font-size:1.4rem;font-weight:700;color:var(--accent);}
-    .nh-pill-txt{font-size:0.8rem;color:rgba(255,255,255,0.7);text-align:left;line-height:1.3;}
-    .nh-form{display:flex;gap:10px;max-width:440px;margin:0 auto;flex-wrap:wrap;justify-content:center;}
-    .nh-input{flex:1;min-width:220px;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:20px;color:white;font-family:inherit;font-size:0.9rem;padding:12px 18px;outline:none;transition:border-color 0.15s;}
-    .nh-input:focus{border-color:var(--accent);}
-    .nh-input::placeholder{color:rgba(255,255,255,0.4);}
-    .nh-note{font-size:0.75rem;color:rgba(255,255,255,0.35);margin-top:12px;}
 
-    /* HERO (secondary) */
-    .hero{background:var(--white);border-bottom:1px solid var(--border);padding:52px 20px 40px;text-align:center;}
-    .hero-badge{display:inline-flex;align-items:center;gap:6px;font-size:0.75rem;font-weight:600;color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent-border);padding:4px 12px;border-radius:20px;margin-bottom:16px;}
-    .hero h1{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700;line-height:1.15;letter-spacing:-0.02em;margin-bottom:12px;}
-    .hero p{font-size:0.95rem;color:var(--text-soft);max-width:440px;margin:0 auto 22px;line-height:1.65;}
-    .hero-btns{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;}
+    .masthead {
+      background: var(--ink);
+      color: var(--cream);
+      text-align: center;
+      padding: 60px 24px 48px;
+      position: relative;
+      overflow: hidden;
+    }
+    .masthead::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(255,255,255,0.03) 39px,rgba(255,255,255,0.03) 40px);
+    }
+    .masthead-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 400;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold2);
+      margin-bottom: 20px;
+    }
+    .masthead h1 {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(2.4rem, 6vw, 4.5rem);
+      font-weight: 700;
+      line-height: 1.1;
+      letter-spacing: -0.02em;
+      color: var(--cream);
+      margin-bottom: 16px;
+    }
+    .masthead-sub {
+      font-size: 1.05rem;
+      color: rgba(250,248,243,0.65);
+      font-style: italic;
+      margin-bottom: 32px;
+    }
+    .masthead-meta { display: flex; align-items: center; justify-content: center; gap: 16px; flex-wrap: wrap; }
+    .masthead-pill {
+      background: rgba(255,255,255,0.08);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(250,248,243,0.8);
+      font-size: 0.8rem;
+      letter-spacing: 0.05em;
+      padding: 6px 16px;
+      border-radius: 20px;
+    }
 
-    /* CONF CARDS */
-    .sec-hd{display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;padding-top:32px;}
-    .sec-title{font-size:0.9rem;font-weight:700;}
-    .conf-list{display:flex;flex-direction:column;gap:10px;}
-    .conf-card{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:18px 22px;display:flex;align-items:center;justify-content:space-between;cursor:pointer;transition:all 0.15s;box-shadow:var(--shadow-sm);}
-    .conf-card:hover{border-color:var(--border2);box-shadow:var(--shadow);transform:translateY(-1px);}
-    .conf-card h3{font-size:0.95rem;font-weight:600;margin-bottom:3px;}
-    .conf-card p{font-size:0.8rem;color:var(--text-soft);}
-    .conf-meta{display:flex;align-items:center;gap:10px;}
-    .conf-pill{font-size:0.73rem;font-weight:500;color:var(--text-soft);background:var(--bg);border:1px solid var(--border);padding:3px 9px;border-radius:20px;}
+    .newsletter-bar {
+      background: var(--orange);
+      color: white;
+      padding: 20px 24px;
+      text-align: center;
+    }
+    .newsletter-bar p { font-size: 0.95rem; margin-bottom: 12px; opacity: 0.95; }
+    .newsletter-form { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
+    .newsletter-form input {
+      flex: 1; min-width: 200px;
+      padding: 10px 16px; border: none; border-radius: 4px;
+      font-family: inherit; font-size: 0.9rem;
+      background: rgba(255,255,255,0.95); color: var(--ink);
+    }
+    .newsletter-form input::placeholder { color: #999; }
+    .newsletter-form button {
+      padding: 10px 20px; background: var(--ink); color: white;
+      border: none; border-radius: 4px; font-family: inherit;
+      font-size: 0.9rem; font-weight: 500; cursor: pointer; white-space: nowrap;
+    }
+    .newsletter-form button:hover { background: var(--ink2); }
 
-    /* SESSION TABS */
-    .sessions-wrap{background:var(--white);border-bottom:1px solid var(--border);position:sticky;top:58px;z-index:200;}
-    .sessions-bar{max-width:740px;margin:0 auto;padding:0 20px;display:flex;overflow-x:auto;gap:0;}
-    .stab{padding:13px 18px;font-size:0.83rem;font-weight:500;color:var(--text-soft);cursor:pointer;white-space:nowrap;border-bottom:2px solid transparent;background:none;border-top:none;border-left:none;border-right:none;font-family:inherit;transition:all 0.15s;}
-    .stab:hover{color:var(--text);}
-    .stab.active{color:var(--accent);border-bottom-color:var(--accent);}
+    .session-nav {
+      background: var(--white);
+      border-bottom: 1px solid var(--rule);
+      position: sticky; top: 0; z-index: 100;
+      box-shadow: 0 2px 8px rgba(26,21,16,0.06);
+    }
+    .session-tabs {
+      display: flex; overflow-x: auto; scrollbar-width: none;
+      max-width: 860px; margin: 0 auto; padding: 0 24px;
+    }
+    .session-tabs::-webkit-scrollbar { display: none; }
+    .stab {
+      flex-shrink: 0; padding: 16px 20px;
+      background: none; border: none; border-bottom: 2px solid transparent;
+      font-family: 'Source Serif 4', serif; font-size: 0.875rem;
+      color: var(--ink3); cursor: pointer; transition: all 0.15s; white-space: nowrap;
+    }
+    .stab:hover { color: var(--ink); }
+    .stab.active { color: var(--orange); border-bottom-color: var(--orange); font-weight: 500; }
 
-    /* TALK ARTICLE */
-    .talk-article{background:var(--white);border:1px solid var(--border);border-radius:var(--r);margin-bottom:16px;box-shadow:var(--shadow-sm);overflow:hidden;transition:box-shadow 0.15s;}
-    .talk-article:hover{box-shadow:var(--shadow);}
-    .talk-body{padding:26px 30px 20px;}
-    @media(max-width:600px){.talk-body{padding:18px 16px 14px;}}
-    .talk-top{display:flex;align-items:center;justify-content:space-between;margin-bottom:14px;}
-    .talk-author{display:flex;align-items:center;gap:10px;}
-    .avatar{width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#f59e0b,var(--accent));display:flex;align-items:center;justify-content:center;font-size:0.76rem;font-weight:700;color:white;flex-shrink:0;}
-    .author-name{font-size:0.9rem;font-weight:600;}
-    .session-tag{font-size:0.7rem;color:var(--text-soft);background:var(--bg);border:1px solid var(--border);padding:2px 8px;border-radius:20px;margin-top:2px;display:inline-block;}
-    .talk-headline{font-size:1.2rem;font-weight:700;font-style:italic;line-height:1.3;letter-spacing:-0.01em;margin-bottom:16px;}
-    .talk-prose{font-family:Georgia,'Times New Roman',serif;font-size:1rem;line-height:1.85;color:#2a2a2a;margin-bottom:18px;}
-    .talk-prose p{margin-bottom:1em;}
-    .talk-prose p:last-child{margin-bottom:0;}
-    .pullquote{border-left:3px solid var(--accent);background:var(--accent-soft);padding:14px 20px;border-radius:0 var(--r-sm) var(--r-sm) 0;margin-bottom:10px;}
-    .pullquote p{font-family:Georgia,serif;font-size:1.04rem;line-height:1.65;color:var(--text);font-style:italic;}
-    .scripture-row{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:4px;}
-    .scripture-tag{font-size:0.73rem;font-weight:500;color:var(--blue);background:rgba(37,99,235,0.06);border:1px solid rgba(37,99,235,0.18);padding:3px 9px;border-radius:20px;}
+    .search-wrap { padding: 28px 24px 0; max-width: 860px; margin: 0 auto; }
+    .search-input {
+      width: 100%; padding: 12px 18px;
+      border: 1px solid var(--rule); border-radius: 6px;
+      background: var(--white); font-family: 'Source Serif 4', serif;
+      font-size: 0.95rem; color: var(--ink); transition: border-color 0.15s;
+    }
+    .search-input:focus { outline: none; border-color: var(--gold); }
+    .search-input::placeholder { color: var(--ink3); font-style: italic; }
 
-    /* TRANSCRIPT SECTION */
-    .transcript-section{margin-top:20px;border-top:1px solid var(--border);padding-top:16px;}
-    .transcript-toggle{display:flex;align-items:center;justify-content:space-between;cursor:pointer;padding:8px 0;}
-    .transcript-toggle h4{font-size:0.85rem;font-weight:600;color:var(--text-soft);}
-    .transcript-body{display:none;margin-top:14px;}
-    .transcript-body.open{display:block;}
-    .transcript-prose{font-family:Georgia,serif;font-size:0.95rem;line-height:1.85;color:#3a3a3a;white-space:pre-line;}
-    .submit-transcript-btn{display:flex;align-items:center;gap:8px;background:var(--bg);border:1px dashed var(--border2);border-radius:var(--r);padding:16px 20px;cursor:pointer;width:100%;font-family:inherit;font-size:0.85rem;color:var(--text-soft);transition:all 0.15s;margin-top:10px;}
-    .submit-transcript-btn:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-soft);}
+    .container { max-width: 860px; margin: 0 auto; padding: 0 24px; }
+    .talks-section { padding: 32px 0 80px; }
+    .session-header {
+      display: flex; align-items: baseline; gap: 16px;
+      margin-bottom: 28px; padding-bottom: 16px;
+      border-bottom: 1px solid var(--rule);
+    }
+    .session-title { font-family: 'Playfair Display', serif; font-size: 1.5rem; font-weight: 600; }
+    .session-count { font-size: 0.85rem; color: var(--ink3); }
 
-    /* TALK FOOTER */
-    .talk-footer{border-top:1px solid var(--border);padding:11px 30px;display:flex;align-items:center;gap:6px;flex-wrap:wrap;}
-    @media(max-width:600px){.talk-footer{padding:10px 16px;}}
-    .react-btn{display:inline-flex;align-items:center;gap:5px;background:none;border:1px solid var(--border);border-radius:20px;padding:5px 11px;font-size:0.8rem;color:var(--text-soft);cursor:pointer;font-family:inherit;transition:all 0.15s;}
-    .react-btn:hover{background:var(--bg);border-color:var(--border2);}
-    .react-btn.active{background:var(--accent-soft);border-color:var(--accent-border);color:var(--accent);}
-    .react-n{font-weight:600;min-width:6px;}
-    .comment-tog{margin-left:auto;display:inline-flex;align-items:center;gap:5px;background:none;border:none;font-size:0.8rem;color:var(--text-soft);cursor:pointer;font-family:inherit;padding:5px 6px;border-radius:var(--r-sm);transition:all 0.15s;}
-    .comment-tog:hover{background:var(--bg);color:var(--text);}
+    .talk-card {
+      background: var(--white);
+      border: 1px solid var(--rule);
+      border-radius: 8px;
+      margin-bottom: 24px;
+      overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+      animation: fadeUp 0.4s ease both;
+    }
+    .talk-card:hover { box-shadow: 0 8px 40px rgba(26,21,16,0.12); transform: translateY(-2px); }
+    @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
 
-    /* COMMENTS */
-    .comments-area{border-top:1px solid var(--border);padding:20px 30px;display:none;background:var(--bg);}
-    @media(max-width:600px){.comments-area{padding:16px;}}
-    .comments-area.open{display:block;}
-    .comment-item{padding:12px 0;border-bottom:1px solid var(--border);}
-    .comment-item:last-of-type{border-bottom:none;}
-    .comment-hd{display:flex;align-items:center;gap:8px;margin-bottom:5px;}
-    .c-avatar{width:26px;height:26px;border-radius:50%;background:var(--border2);display:flex;align-items:center;justify-content:center;font-size:0.64rem;font-weight:600;color:var(--text-soft);flex-shrink:0;}
-    .c-name{font-size:0.82rem;font-weight:600;}
-    .c-time{font-size:0.73rem;color:var(--text-lighter);}
-    .c-body{font-size:0.875rem;color:var(--text);line-height:1.6;padding-left:34px;}
-    .c-input-row{display:flex;gap:10px;margin-top:16px;align-items:center;}
-    .c-input-row input{flex:1;border:1px solid var(--border2);border-radius:20px;padding:9px 16px;font-size:0.875rem;font-family:inherit;outline:none;background:var(--white);color:var(--text);transition:border-color 0.15s,box-shadow 0.15s;}
-    .c-input-row input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(255,103,25,0.1);}
+    .talk-inner { padding: 28px 32px; }
+    .talk-meta { display: flex; align-items: center; gap: 12px; margin-bottom: 14px; }
+    .talk-avatar {
+      width: 36px; height: 36px; border-radius: 50%;
+      background: var(--ink); color: var(--cream);
+      font-family: 'Playfair Display', serif; font-size: 0.75rem;
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .talk-speaker { font-weight: 500; font-size: 0.9rem; color: var(--ink2); }
+    .talk-role { font-size: 0.78rem; color: var(--ink3); }
+    .talk-session-tag {
+      margin-left: auto; font-size: 0.72rem; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--gold);
+      background: rgba(184,134,11,0.08);
+      padding: 3px 10px; border-radius: 12px; white-space: nowrap;
+    }
+    .talk-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.25rem; font-weight: 600; line-height: 1.3;
+      color: var(--ink); margin-bottom: 14px;
+    }
+    .talk-summary { font-size: 0.97rem; line-height: 1.75; color: var(--ink2); margin-bottom: 20px; }
+    .talk-quotes { border-left: 3px solid var(--gold2); padding-left: 18px; margin-bottom: 20px; }
+    .talk-quote { font-style: italic; font-size: 0.95rem; color: var(--ink2); line-height: 1.65; margin-bottom: 10px; }
+    .talk-quote:last-child { margin-bottom: 0; }
+    .talk-footer { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+    .scripture-pill {
+      font-size: 0.75rem; color: var(--ink3);
+      background: var(--cream2); border: 1px solid var(--rule);
+      padding: 3px 10px; border-radius: 12px;
+    }
+    .themes-row { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; }
+    .theme-tag {
+      font-size: 0.72rem; color: var(--orange);
+      background: rgba(196,75,26,0.07);
+      padding: 2px 9px; border-radius: 10px;
+    }
 
-    /* DATA SCIENCE SECTION */
-    .insights-section{background:var(--white);border:1px solid var(--border);border-radius:var(--r);margin-top:40px;overflow:hidden;box-shadow:var(--shadow-sm);}
-    .insights-header{padding:24px 28px;border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;}
-    .insights-title{font-size:1rem;font-weight:700;}
-    .insights-sub{font-size:0.82rem;color:var(--text-soft);margin-top:2px;}
-    .transcript-counter{display:flex;align-items:center;gap:10px;}
-    .counter-bar-wrap{width:160px;height:6px;background:var(--bg);border-radius:3px;overflow:hidden;}
-    .counter-bar{height:100%;background:var(--accent);border-radius:3px;transition:width 0.5s;}
-    .counter-text{font-size:0.78rem;color:var(--text-soft);}
+    .empty-state { text-align: center; padding: 60px 20px; color: var(--ink3); font-style: italic; }
 
-    /* BLURRED STATE */
-    .insights-blurred{position:relative;}
-    .insights-blur-inner{filter:blur(6px);pointer-events:none;padding:28px;user-select:none;}
-    .insights-blur-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:rgba(249,249,247,0.85);backdrop-filter:blur(2px);padding:32px;text-align:center;}
-    .blur-icon{font-size:2.5rem;margin-bottom:12px;}
-    .blur-title{font-size:1rem;font-weight:700;margin-bottom:6px;}
-    .blur-sub{font-size:0.85rem;color:var(--text-soft);max-width:360px;margin-bottom:20px;line-height:1.6;}
-    .blur-progress{width:100%;max-width:300px;margin:0 auto 20px;}
-    .blur-bar-wrap{height:8px;background:var(--border);border-radius:4px;overflow:hidden;margin-bottom:8px;}
-    .blur-bar{height:100%;background:var(--accent);border-radius:4px;transition:width 0.5s;}
-    .blur-count{font-size:0.8rem;color:var(--text-soft);}
+    footer {
+      background: var(--ink); color: rgba(250,248,243,0.5);
+      text-align: center; padding: 40px 24px; font-size: 0.85rem;
+    }
+    footer a { color: var(--gold2); text-decoration: none; }
 
-    /* INSIGHTS CONTENT */
-    .insights-content{padding:28px;}
-    .insights-grid{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-bottom:24px;}
-    @media(max-width:600px){.insights-grid{grid-template-columns:1fr;}}
-    .insight-card{background:var(--bg);border:1px solid var(--border);border-radius:var(--r);padding:20px;}
-    .insight-card h4{font-size:0.82rem;font-weight:700;text-transform:uppercase;letter-spacing:0.06em;color:var(--text-soft);margin-bottom:14px;}
-    .theme-item{display:flex;align-items:center;gap:10px;margin-bottom:10px;}
-    .theme-bar-wrap{flex:1;height:6px;background:var(--border);border-radius:3px;overflow:hidden;}
-    .theme-bar{height:100%;background:var(--accent);border-radius:3px;}
-    .theme-name{font-size:0.82rem;font-weight:500;min-width:90px;}
-    .theme-count{font-size:0.75rem;color:var(--text-soft);min-width:30px;text-align:right;}
-    .scripture-item{display:flex;justify-content:space-between;align-items:center;padding:6px 0;border-bottom:1px solid var(--border);font-size:0.85rem;}
-    .scripture-item:last-child{border-bottom:none;}
-    .sentiment-item{display:flex;align-items:center;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--border);font-size:0.82rem;}
-    .sentiment-item:last-child{border-bottom:none;}
-    .sentiment-score{font-weight:600;color:var(--accent);}
-    .word-cloud{display:flex;flex-wrap:wrap;gap:8px;}
-    .word-tag{background:var(--white);border:1px solid var(--border);border-radius:20px;padding:4px 12px;font-size:0.78rem;color:var(--text);}
-    .word-tag.big{font-size:0.95rem;font-weight:600;color:var(--accent);}
-    .word-tag.med{font-size:0.85rem;font-weight:500;}
-    .conf-summary-box{background:var(--accent-soft);border:1px solid var(--accent-border);border-radius:var(--r);padding:18px 22px;margin-bottom:20px;}
-    .conf-summary-box p{font-family:Georgia,serif;font-size:0.95rem;line-height:1.75;color:var(--text);font-style:italic;}
-
-    /* EMAIL ADMIN */
-    .email-section{background:var(--white);border:1px solid var(--border);border-radius:var(--r);margin-top:24px;padding:24px 28px;}
-    .email-section h3{font-size:0.95rem;font-weight:700;margin-bottom:4px;}
-    .email-section p{font-size:0.82rem;color:var(--text-soft);margin-bottom:18px;}
-    .email-week-row{display:flex;align-items:center;gap:12px;margin-bottom:10px;flex-wrap:wrap;}
-    .week-label{font-size:0.85rem;font-weight:500;min-width:60px;}
-    .week-status{font-size:0.75rem;padding:2px 8px;border-radius:20px;}
-    .week-draft{background:#fef3c7;color:#92400e;}
-    .week-sent{background:#d1fae5;color:#065f46;}
-
-    /* SUBMIT PANEL */
-    .submit-panel{background:var(--white);border:1px solid var(--border);border-radius:var(--r);padding:26px 30px;margin-top:28px;box-shadow:var(--shadow-sm);}
-    .submit-panel h3{font-size:0.95rem;font-weight:700;margin-bottom:4px;}
-    .panel-sub{font-size:0.84rem;color:var(--text-soft);margin-bottom:20px;}
-
-    /* PENDING */
-    .pending-panel{background:#fffbf0;border:1px solid #fde68a;border-radius:var(--r);padding:22px 26px;margin-bottom:12px;}
-    .pending-label{font-size:0.7rem;font-weight:600;color:#92400e;background:#fef3c7;border:1px solid #fde68a;padding:2px 8px;border-radius:20px;display:inline-block;margin-bottom:10px;}
-    .pending-spk{font-size:0.92rem;font-weight:600;margin-bottom:4px;}
-    .pending-sum{font-size:0.83rem;color:var(--text-soft);margin-bottom:8px;line-height:1.6;}
-    .pending-by{font-size:0.73rem;color:var(--text-lighter);margin-bottom:11px;}
-
-    /* MISC */
-    .empty{text-align:center;padding:48px 20px;color:var(--text-soft);}
-    .loading-wrap{display:flex;justify-content:center;padding:48px;}
-    .spinner{width:20px;height:20px;border:2px solid var(--border);border-top-color:var(--accent);border-radius:50%;animation:spin 0.65s linear infinite;}
-    @keyframes spin{to{transform:rotate(360deg);}}
-    @keyframes fadeUp{from{opacity:0;transform:translateY(10px);}to{opacity:1;transform:translateY(0);}}
-    .fade-up{animation:fadeUp 0.3s ease both;}
-    .divider{height:1px;background:var(--border);margin:28px 0;}
-    .user-chip{display:inline-flex;align-items:center;gap:7px;font-size:0.82rem;font-weight:500;}
-    .user-dot{width:28px;height:28px;background:var(--accent);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:0.68rem;font-weight:700;color:white;}
-    .back-btn{display:inline-flex;align-items:center;gap:6px;color:var(--text-soft);font-size:0.84rem;background:none;border:none;cursor:pointer;font-family:inherit;padding:6px 0;margin-bottom:18px;transition:color 0.15s;}
-    .back-btn:hover{color:var(--text);}
-    .conf-ph h1{font-size:1.5rem;font-weight:700;letter-spacing:-0.02em;margin-bottom:4px;}
-    .conf-ph p{color:var(--text-soft);font-size:0.85rem;}
-    .conf-ph-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px;}
-    .section-hd2{font-size:0.9rem;font-weight:700;margin-bottom:12px;padding-top:8px;}
-
-    footer{border-top:1px solid var(--border);padding:26px 20px;text-align:center;font-size:0.78rem;color:var(--text-soft);background:var(--white);}
-    footer a{color:var(--accent);text-decoration:none;}
+    @media (max-width: 600px) {
+      .talk-inner { padding: 20px; }
+      .talk-title { font-size: 1.1rem; }
+      .masthead h1 { font-size: 2rem; }
+      .talk-session-tag { display: none; }
+    }
   </style>
 </head>
 <body>
 
-<!-- NAV -->
-<nav class="topnav">
-  <div class="nav-brand" onclick="showPage('home')">
-    <div class="nav-logo">GC</div>
-    GC Summaries
+<header class="masthead">
+  <div class="masthead-eyebrow">196th Annual General Conference</div>
+  <h1>Conference Summaries</h1>
+  <p class="masthead-sub">Easter Weekend &middot; April 5&ndash;6, 2026 &middot; Salt Lake City</p>
+  <div class="masthead-meta">
+    <span class="masthead-pill">34 Talks</span>
+    <span class="masthead-pill">4 Sessions</span>
+    <span class="masthead-pill">He Is Risen</span>
   </div>
-  <div class="nav-right" id="nav-right">
-    <button class="btn btn-ghost btn-sm" onclick="openModal('login-modal')">Sign in</button>
-    <button class="btn btn-primary btn-sm" onclick="openModal('signup-modal')">Join free</button>
-  </div>
+</header>
+
+<div class="newsletter-bar">
+  <p><strong>Between Conferences</strong> &mdash; Get 3 ideas, 2 quotes &amp; 1 question from General Conference each week.</p>
+  <form class="newsletter-form" onsubmit="subscribeNewsletter(event)">
+    <input type="email" id="nl-email" placeholder="your@email.com" required />
+    <button type="submit">Subscribe Free</button>
+  </form>
+</div>
+
+<nav class="session-nav">
+  <div class="session-tabs" id="session-tabs"></div>
 </nav>
 
-<!-- ══ MODALS ══ -->
-<div class="modal-overlay" id="login-modal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal('login-modal')">✕</button>
-    <h2>Welcome back</h2>
-    <p class="modal-sub">Sign in to comment, react, submit transcripts, and add notes.</p>
-    <div id="login-msg"></div>
-    <div class="fg"><label>Email</label><input type="email" id="login-email" placeholder="you@example.com" /></div>
-    <div class="fg"><label>Password</label><input type="password" id="login-pass" placeholder="••••••••" /></div>
-    <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="doLogin()">Sign in</button>
-    <p style="text-align:center;margin-top:14px;font-size:0.82rem;color:var(--text-soft)">No account? <span style="color:var(--accent);cursor:pointer;font-weight:500" onclick="closeModal('login-modal');openModal('signup-modal')">Join free</span></p>
-  </div>
+<div class="search-wrap">
+  <input class="search-input" type="search" id="search" placeholder="Search speakers, titles, quotes, or themes&hellip;" oninput="renderTalks()" />
 </div>
 
-<div class="modal-overlay" id="signup-modal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal('signup-modal')">✕</button>
-    <h2>Join the community</h2>
-    <p class="modal-sub">Add notes, submit transcripts, react to talks, and get the weekly newsletter.</p>
-    <div id="signup-msg"></div>
-    <div class="fg"><label>Your name</label><input type="text" id="signup-name" placeholder="First Last" /></div>
-    <div class="fg"><label>Email</label><input type="email" id="signup-email" placeholder="you@example.com" /></div>
-    <div class="fg"><label>Password</label><input type="password" id="signup-pass" placeholder="At least 6 characters" /></div>
-    <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="doSignup()">Create account</button>
-    <p style="text-align:center;margin-top:14px;font-size:0.82rem;color:var(--text-soft)">Have an account? <span style="color:var(--accent);cursor:pointer;font-weight:500" onclick="closeModal('signup-modal');openModal('login-modal')">Sign in</span></p>
-  </div>
-</div>
-
-<div class="modal-overlay" id="conf-modal">
-  <div class="modal">
-    <button class="modal-close" onclick="closeModal('conf-modal')">✕</button>
-    <h2>New conference</h2><p class="modal-sub">Add a General Conference period.</p>
-    <div id="conf-msg"></div>
-    <div class="fg"><label>Title</label><input type="text" id="conf-title" placeholder="April 2026 General Conference" /></div>
-    <div class="fg"><label>Date</label><input type="text" id="conf-date" placeholder="April 4–5, 2026" /></div>
-    <div class="fg"><label>Description (optional)</label><textarea id="conf-desc" rows="2" placeholder="Brief description..."></textarea></div>
-    <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="addConference()">Add conference</button>
-  </div>
-</div>
-
-<div class="modal-overlay" id="talk-modal">
-  <div class="modal modal-wide">
-    <button class="modal-close" onclick="closeModal('talk-modal')">✕</button>
-    <h2>Add a talk</h2><p class="modal-sub">Publish an official talk to this conference.</p>
-    <div id="talk-msg"></div>
-    <div class="grid2">
-      <div class="fg"><label>Speaker</label><input type="text" id="talk-speaker" placeholder="Elder / Sister / President..." /></div>
-      <div class="fg"><label>Session</label><select id="talk-session"><option>Saturday Morning</option><option>Saturday Afternoon</option><option>Sunday Morning</option><option>Sunday Afternoon</option></select></div>
-      <div class="fg span2"><label>Talk title</label><input type="text" id="talk-title-input" placeholder="Title of the talk" /></div>
-      <div class="fg span2"><label>Summary</label><textarea id="talk-summary" rows="7" placeholder="Write summary here. Separate paragraphs with a blank line..."></textarea><p class="fg-hint">💡 Press Enter twice between paragraphs for rich formatting.</p></div>
-      <div class="fg span2"><label>Key quotes (one per line)</label><textarea id="talk-quotes" rows="3" placeholder="Memorable quotes, one per line..."></textarea></div>
-      <div class="fg span2"><label>Scripture references (comma separated)</label><input type="text" id="talk-scriptures" placeholder="John 3:16, Mosiah 3:19, D&C 58:27" /></div>
+<main class="container">
+  <section class="talks-section">
+    <div class="session-header">
+      <h2 class="session-title" id="session-label"></h2>
+      <span class="session-count" id="session-count"></span>
     </div>
-    <button class="btn btn-primary" style="width:100%;justify-content:center;margin-top:8px" onclick="addTalk()">Publish talk</button>
-  </div>
-</div>
-
-<!-- TRANSCRIPT MODAL -->
-<div class="modal-overlay" id="transcript-modal">
-  <div class="modal modal-wide">
-    <button class="modal-close" onclick="closeModal('transcript-modal')">✕</button>
-    <h2>Submit full transcript</h2>
-    <p class="modal-sub">Paste the raw YouTube transcript — we'll automatically clean and format it, then attach it to the talk.</p>
-    <div id="transcript-msg"></div>
-    <div class="fg">
-      <label>Raw transcript</label>
-      <textarea id="transcript-raw" rows="12" placeholder="Paste the full YouTube transcript here including timestamps — we'll remove them automatically..."></textarea>
-      <p class="fg-hint">💡 On YouTube: click the three dots (...) under the video → Show transcript → copy all</p>
-    </div>
-    <button class="btn btn-primary" style="width:100%;justify-content:center" onclick="submitTranscript()" id="transcript-submit-btn">Format & Submit</button>
-  </div>
-</div>
-
-<!-- PAGES -->
-<div id="app">
-
-  <!-- HOME PAGE -->
-  <div id="page-home">
-    <!-- PRIMARY CTA: Newsletter -->
-    <div class="newsletter-hero">
-      <div class="nh-eyebrow">📬 Between Conferences</div>
-      <h1 class="nh-title">5 Minutes a Week.<br><span>Hear Him.</span></h1>
-      <p class="nh-sub">One talk. Three ideas. Two quotes. One question to carry you through the week — delivered every Thursday for 26 weeks between conferences.</p>
-      <div class="nh-format">
-        <div class="nh-pill"><span class="nh-pill-num">3</span><span class="nh-pill-txt">Ideas from<br>the talk</span></div>
-        <div class="nh-pill"><span class="nh-pill-num">2</span><span class="nh-pill-txt">Quotes to<br>remember</span></div>
-        <div class="nh-pill"><span class="nh-pill-num">1</span><span class="nh-pill-txt">Question to<br>ponder</span></div>
-      </div>
-      <div class="nh-form">
-        <input class="nh-input" type="email" id="subscribe-email" placeholder="Enter your email..." />
-        <button class="btn btn-primary" onclick="subscribeEmail()">Subscribe free</button>
-      </div>
-      <p class="nh-note">No spam. Unsubscribe anytime. One email per week, April through October.</p>
-    </div>
-
-    <!-- Conferences list -->
-    <div class="hero" style="padding:32px 20px 24px">
-      <div class="hero-badge">⛪ Community Notes</div>
-      <h1>General Conference Summaries</h1>
-      <p>Talk summaries, key quotes, and community insights — written by members, for members.</p>
-      <div class="hero-btns">
-        <button class="btn btn-secondary" onclick="openModal('signup-modal')">Join to contribute</button>
-      </div>
-    </div>
-
-    <div class="wrap page" style="padding-top:20px">
-      <div class="sec-hd">
-        <span class="sec-title">All Conferences</span>
-        <div id="add-conf-btn" style="display:none">
-          <button class="btn btn-primary btn-sm" onclick="openModal('conf-modal')">+ New conference</button>
-        </div>
-      </div>
-      <div class="conf-list" id="conferences-list">
-        <div class="loading-wrap"><div class="spinner"></div></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- CONFERENCE PAGE -->
-  <div id="page-conference" style="display:none">
-    <div class="sessions-wrap">
-      <div class="sessions-bar" id="session-tabs"></div>
-    </div>
-    <div class="wrap page">
-      <button class="back-btn" onclick="showPage('home')">← All conferences</button>
-      <div class="conf-ph">
-        <h1 id="conf-page-title"></h1>
-        <p id="conf-page-sub"></p>
-        <div class="conf-ph-actions" id="conf-admin-btns"></div>
-      </div>
-
-      <div id="talks-list"></div>
-
-      <!-- Submit notes panel -->
-      <div class="submit-panel" id="submit-section" style="display:none">
-        <h3>Submit your notes</h3>
-        <p class="panel-sub">Share your summary — reviewed and published to help the community study.</p>
-        <div id="submit-msg"></div>
-        <div class="grid2">
-          <div class="fg"><label>Speaker</label><input type="text" id="sub-speaker" placeholder="Speaker name" /></div>
-          <div class="fg"><label>Session</label><select id="sub-session"><option>Saturday Morning</option><option>Saturday Afternoon</option><option>Sunday Morning</option><option>Sunday Afternoon</option></select></div>
-          <div class="fg span2"><label>Talk title</label><input type="text" id="sub-title" placeholder="Title of the talk" /></div>
-          <div class="fg span2"><label>Your summary</label><textarea id="sub-summary" rows="5" placeholder="Use blank lines between paragraphs."></textarea></div>
-          <div class="fg span2"><label>Key quotes (one per line)</label><textarea id="sub-quotes" rows="3" placeholder="Memorable quotes..."></textarea></div>
-          <div class="fg span2"><label>Scripture references</label><input type="text" id="sub-scriptures" placeholder="John 3:16, Alma 7:11" /></div>
-        </div>
-        <button class="btn btn-secondary" style="margin-top:12px" onclick="submitSummary()">Submit for review</button>
-      </div>
-
-      <div id="submit-login-prompt" style="display:none;margin-top:24px;text-align:center;padding:24px;background:var(--white);border:1px solid var(--border);border-radius:var(--r)">
-        <p style="font-size:0.88rem;color:var(--text-soft);margin-bottom:12px">Join free to submit talk notes, add transcripts, and join the discussion.</p>
-        <button class="btn btn-primary btn-sm" onclick="openModal('signup-modal')">Join the community</button>
-      </div>
-
-      <!-- DATA SCIENCE SECTION -->
-      <div id="insights-wrapper" style="display:none">
-        <div class="insights-section">
-          <div class="insights-header">
-            <div>
-              <div class="insights-title">📊 Conference Insights</div>
-              <div class="insights-sub">AI-powered analysis of all submitted transcripts</div>
-            </div>
-            <div class="transcript-counter">
-              <div>
-                <div class="counter-bar-wrap"><div class="counter-bar" id="counter-bar" style="width:0%"></div></div>
-                <div class="counter-text" id="counter-text">0 / 10 transcripts</div>
-              </div>
-            </div>
-          </div>
-
-          <!-- BLURRED until 10 transcripts -->
-          <div id="insights-blurred" class="insights-blurred">
-            <div class="insights-blur-inner">
-              <div style="padding:28px">
-                <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
-                  <div style="background:var(--bg);border-radius:var(--r);height:180px"></div>
-                  <div style="background:var(--bg);border-radius:var(--r);height:180px"></div>
-                  <div style="background:var(--bg);border-radius:var(--r);height:140px"></div>
-                  <div style="background:var(--bg);border-radius:var(--r);height:140px"></div>
-                </div>
-              </div>
-            </div>
-            <div class="insights-blur-overlay" id="blur-overlay">
-              <div class="blur-icon">🔬</div>
-              <div class="blur-title">Conference Analysis Unlocks Soon</div>
-              <div class="blur-sub">Submit full talk transcripts to unlock AI-powered theme analysis, scripture frequency charts, sentiment scores, and more.</div>
-              <div class="blur-progress">
-                <div class="blur-bar-wrap"><div class="blur-bar" id="blur-bar" style="width:0%"></div></div>
-                <div class="blur-count" id="blur-count">0 of 10 transcripts submitted</div>
-              </div>
-              <button class="btn btn-primary" onclick="closeModal('transcript-modal');openModal('transcript-modal')" style="display:none" id="submit-first-transcript">Submit a transcript to help unlock</button>
-            </div>
-          </div>
-
-          <!-- UNLOCKED insights -->
-          <div id="insights-unlocked" style="display:none">
-            <div class="insights-content">
-              <div class="conf-summary-box" id="conf-summary-box"></div>
-              <div class="insights-grid" id="insights-grid"></div>
-            </div>
-            <div id="admin-analyze-btn" style="display:none;padding:0 28px 24px">
-              <button class="btn btn-purple" onclick="runAnalysis()">🔬 Re-analyze Conference</button>
-              <p style="font-size:0.75rem;color:var(--text-soft);margin-top:6px">Runs Claude AI on all transcripts — takes ~30 seconds</p>
-            </div>
-          </div>
-        </div>
-
-        <!-- EMAIL ADMIN (admin only) -->
-        <div class="email-section" id="email-section" style="display:none">
-          <h3>📧 Weekly Email Generator</h3>
-          <p>Generate James Clear 3-2-1 style emails for each week and push directly to Beehiiv as drafts.</p>
-          <div id="email-weeks"></div>
-        </div>
-      </div>
-
-      <!-- Pending (admin) -->
-      <div id="pending-section" style="display:none;margin-top:40px">
-        <div class="divider"></div>
-        <div class="section-hd2">📋 Pending submissions</div>
-        <div id="pending-list"></div>
-      </div>
-    </div>
-  </div>
-
-</div>
+    <div id="talks-list"></div>
+  </section>
+</main>
 
 <footer>
-  <p>General Conference Summaries · Community notes, not an official publication of The Church of Jesus Christ of Latter-day Saints</p>
-  <p style="margin-top:6px"><a href="https://www.churchofjesuschrist.org/study/general-conference" target="_blank">Read official talks at ChurchofJesusChrist.org →</a></p>
+  <p>General Conference Summaries &nbsp;&middot;&nbsp; <a href="https://www.churchofjesuschrist.org/study/general-conference" target="_blank">Watch on ChurchofJesusChrist.org</a></p>
+  <p style="margin-top:8px">Community notes &middot; Not an official Church publication</p>
 </footer>
 
 <script>
-const SUPABASE_URL='https://ccmpnauskmujrpwffmmz.supabase.co';
-const SUPABASE_KEY='eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImNjbXBuYXVza211anJwd2ZmbW16Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzUzMzA0NjgsImV4cCI6MjA5MDkwNjQ2OH0.UoCm-D9rrcjzIfborRTC0allzUqEE6rsO8nK-f15dKY';
-const BEEHIIV_PUB='pub_4e7f9655-5165-4d25-8751-bc7737a837b6';
-const FUNCTIONS_URL=`${SUPABASE_URL}/functions/v1`;
-const sb=supabase.createClient(SUPABASE_URL,SUPABASE_KEY);
-
-let currentUser=null,currentConf=null,currentSession='Saturday Morning',isAdmin=false,currentTranscriptTalkId=null;
-const ADMIN_EMAILS=['jaredwilliamross@gmail.com'];
 const SESSIONS=['Saturday Morning','Saturday Afternoon','Sunday Morning','Sunday Afternoon'];
-const EMOJIS=[{e:'🙏',l:'Amen'},{e:'❤️',l:'Touched'},{e:'💡',l:'Insight'},{e:'✨',l:'Beautiful'}];
+let currentSession='Saturday Morning';
 
-async function init(){
-  const {data:{session}}=await sb.auth.getSession();
-  if(session) await onLogin(session.user);
-  loadConferences();
+const TALKS=[
+{session:'Saturday Morning',speaker:'President Dallin H. Oaks',role:'President of the Church',title:'Welcome Address & Solemn Assembly',summary:'President Oaks welcomed members worldwide to the 196th Annual General Conference, noting this conference was unique as it began with a Solemn Assembly to formally sustain him as the new prophet. He reaffirmed the testimony of the resurrected Lord and acknowledged Jesus Christ as the head of the Church.',quotes:['At this Easter season, I reaffirm our testimony of the resurrected Lord and recognize that He is the head of this Church.'],scriptures:[],themes:['restoration','prophet','Easter']},
+
+{session:'Saturday Morning',speaker:'Elder Patrick Kearon',role:'Quorum of the Twelve Apostles',title:'Come Home',summary:'Elder Kearon used his own conversion story to discuss common consent and sustaining. He shared moving stories of people finding their way back to the Church — those who feel they don\'t belong, those who doubt, those who feel they don\'t measure up, and those limited by tradition. He closed with the hymn "Softly and Tenderly Jesus Is Calling."',quotes:['It really isn\'t where we serve but how that matters to the Lord.','Life is better, everything is better when we are about His business.','The Savior loves all of us and is tenderly calling for you and for me to come home.'],scriptures:['John 21:16'],themes:['come home','callings','belonging','conversion']},
+
+{session:'Saturday Morning',speaker:'Sister Kristin M. Yee',role:'Second Counselor, Relief Society General Presidency',title:'Ministering as the Savior Would',summary:'Sister Yee shared how ministering brothers transformed her father\'s life by consistently walking with him to the temple for three years. She taught that ministering is not a program or checklist but a way of being — the way of Jesus Christ. True ministering brings healing and purpose to both the giver and receiver.',quotes:['Ministering is truly loving and caring for others as the Savior would. It is a way of being; it is the way of our Savior Jesus Christ.','When we minister, we are helping to answer each other\'s prayers. We are the Savior\'s hands.'],scriptures:['John 13:34','Romans 5:8'],themes:['ministering','service','love','healing']},
+
+{session:'Saturday Morning',speaker:'Elder Clark G. Gilbert',role:'Quorum of the Twelve Apostles',title:'Come Home',summary:'Elder Gilbert shared stories of people finding their way back across multiple categories: Sister Anglesey after 30 years away, Brother Vargas who felt he didn\'t measure up, Justin and Kenna Valdez who doubted, and John Raas who was bound by tradition. He used the image of BYU students shining phone flashlights to guide late arrivals — a metaphor for holding up our light to those still seeking.',quotes:['I pledge my life to be a witness to the name of Jesus Christ.','Please come sit with me. We saved a seat just for you.'],scriptures:[],themes:['come home','doubt','light','belonging']},
+
+{session:'Saturday Morning',speaker:'Elder David A. Bednar',role:'Quorum of the Twelve Apostles',title:'Enduring to the End and the Gift of Charity',summary:'Elder Bednar reframed "enduring to the end" as far more than gritting through mortality. He demonstrated that to endure to the end IS to be possessed of charity — the pure love of Christ. He read key scriptures replacing "endure to the end" with "is possessed of the pure love of Christ," showing they are inextricably linked. Charity is both what we do and what we become.',quotes:['Enduring to the end is the joyous quest of a lifetime — a pressing forward with faith in Jesus Christ in a gradual process of trusting in and receiving help from our Savior to become more like Him.','Charity encompasses both what we do and what we can become as this spiritual gift ultimately possesses us.'],scriptures:['3 Nephi 15:9','Moroni 7:47','Article of Faith 13'],themes:['enduring','charity','grace','transformation']},
+
+{session:'Saturday Morning',speaker:'Elder Michael John U. Teh',role:'Seventy',title:'Follow the Prophet',summary:'Elder Teh reflected on his Filipino-Chinese family navigating new traditions when joining the Church. He shared a story of visiting a cancer patient in Japan who radiated unexpected joy, connecting this to the light of Christ — like sunlight reflected by a tall building — which we reflect to others as we follow prophetic counsel.',quotes:['The purpose of the gospel is to transform common creatures into celestial citizens, and that requires change.','When I strive to follow the Savior, He will use us to bless others.'],scriptures:['Mosiah 8:17'],themes:['prophet','gospel culture','light','traditions']},
+
+{session:'Saturday Morning',speaker:'Elder Jorge T. Becerra',role:'Seventy',title:'Put God First — The Law of Tithing',summary:'Elder Becerra explored double-mindedness from James and connected it to putting God first through tithing. He shared a personal miracle: he sold his car to pay tithing, then a friend immediately offered him car payments on a vehicle he needed. His mother\'s testimony anchored the message: "All we need to see is the very hand of Jehovah Himself."',quotes:['All we need to see is the very hand of Jehovah Himself to have any greater assurance that He is blessing us by our payment of tithing.'],scriptures:['James 1:8','Matthew 6:33','Malachi 3:10'],themes:['tithing','put God first','sacrifice','obedience']},
+
+{session:'Saturday Morning',speaker:'President Henry B. Eyring',role:'First Counselor, First Presidency',title:'Peace Through Fervent Prayer',summary:'President Eyring spoke about the power of fervent, continual prayer in a troubled world. He cited Alma\'s people praying silently in their hearts while in bondage, receiving lightened burdens. He testified personally that at his wife\'s funeral he felt unexpected peace and almost joy — the Lord answered his prayer with assurance of a happy reunion ahead.',quotes:['Peace I leave with you, my peace I give unto you: not as the world giveth, give I unto you. Let not your heart be troubled.','I felt it at the funeral of my wife of 61 years. I was surprised at the feeling of peace and almost joy.'],scriptures:['John 14:27','Mosiah 24:12-15'],themes:['prayer','peace','trials','Holy Ghost']},
+
+{session:'Saturday Afternoon',speaker:'Elder Gary E. Stevenson',role:'Quorum of the Twelve Apostles',title:"Precious Cargo — Caring for God's Children",summary:'Elder Stevenson used the world-record achievement of Kansai International Airport — 30 years without losing a single bag — to teach our divine stewardship over God\'s most precious possessions: His children. He applied this to ministering assignments and nurturing the rising generation. Each soul carries a divine tag: never to be forgotten, neglected, or lost.',quotes:['This precious soul has great worth to one day be redeemed by its holder. Never to be forgotten, neglected, or lost.','Teach the rising generation to know, love, and emulate their Savior, Jesus Christ.'],scriptures:['Moroni 6:4'],themes:['ministering','rising generation','worth of souls','stewardship']},
+
+{session:'Saturday Afternoon',speaker:'Elder Eduardo F. Ortega',role:'Seventy',title:'Press Forward with Steadfastness in Christ',summary:'Elder Ortega honored his grandmother Mercedes, the family pioneer who joined the Church in Argentina in 1957, while teaching that family heritage alone is not enough — each person needs a personal testimony. He likened discipleship to climbing a mountain: the covenant path, though demanding, leads to the true summit.',quotes:['Our family heritage is a great blessing, but it is not a substitute for our diligent and intentional search for a personal testimony.','Jesus Christ and His restored gospel constitute that safe path that leads us to the true summit.'],scriptures:['2 Nephi 31:20'],themes:['testimony','discipleship','new converts','covenant path']},
+
+{session:'Saturday Afternoon',speaker:'Elder Wan-Liang Wu',role:'Seventy',title:'Come to Know the True God',summary:'Elder Wu shared his remarkable conversion story — born into a Buddhist family in Taiwan, moving to Bolivia at age 10, meeting missionaries, and being baptized, saying "I\'ve already made up my mind." He used the story of King Lamoni\'s father — "I will give away all my sins to know thee" — to teach that sincere conversion requires desire, faith, repentance, and willingness to change.',quotes:['"I will give away all my sins to know thee."','Coming unto Christ is much more than just learning of Christ. It includes faith and works; it means to be converted to Him and to His restored gospel.'],scriptures:['Alma 22:17-18','John 17:3'],themes:['conversion','knowing God','faith','repentance','Book of Mormon']},
+
+{session:'Saturday Afternoon',speaker:'Brother David J. Wunderli',role:'First Counselor, Young Men General Presidency',title:'Jesus Is Not the Weight — He Is the Relief',summary:'Brother Wunderli told the touching story of his 6-year-old son who packed a picture of Jesus in his backpack for a hike and refused to remove it when the load got heavy. He applied this to youth: Satan lies when he says removing Jesus will lighten your load. Christ is not the weight; He is the relief.',quotes:['Jesus Christ is not the weight; He is the relief.','Satan is a liar.','Each morning as you begin your daily walk, please make sure that Jesus Christ is with you.'],scriptures:['John 16:33','Alma 7:11-12'],themes:['youth','Jesus Christ','daily habits','covenant','relief']},
+
+{session:'Saturday Afternoon',speaker:'Elder Gérald Caussé',role:'Quorum of the Twelve Apostles',title:'Love All and Love Each',summary:'Elder Caussé, in his first General Conference address as a new Apostle, shared that since his calling he has learned he can love even more. Using scripture\'s pairing of "all" and "each," he taught that God loves all universally AND loves each individually. He used Beauty and the Beast to illustrate how seeing others\' divine potential transforms both viewer and viewed.',quotes:['I have learned that I can love even more.','The universe is vast beyond comprehension, yet every soul carries infinite worth in the eyes of our Creator.','God and His Son, Jesus Christ, love all — and they love each.'],scriptures:['Psalm 8:3-5','Mosiah 27:30'],themes:['love','individual worth','divine potential','new apostle']},
+
+{session:'Saturday Afternoon',speaker:'Elder Brian J. Holmes',role:'Seventy',title:'Tethered to Christ — The Covenant Path',summary:'Elder Holmes used the story of a blind man who completed the grueling Jungfrau Marathon tethered to a guide to teach that covenants bind us to Christ our guide. He taught that to walk with Jesus is to follow His prophet, and when Peter\'s road got hard, his answer — "Lord, to whom shall we go?" — is the answer for all of us.',quotes:['To walk with Jesus is to follow His prophet.','Once we bind ourselves to our Savior through covenant, only we can sever the tie. Jesus never will.','Lord, to whom shall we go? Thou hast the words of eternal life.'],scriptures:['John 6:67-69','Ephesians 2:20'],themes:['covenant path','prophet','tethered to Christ','discipleship']},
+
+{session:'Saturday Afternoon',speaker:'Elder Clement M. Matswagothata',role:'Seventy',title:'He Knows You by Name',summary:'Elder Matswagothata from Botswana — whose surname means "getting out of a difficult situation" — taught that Jesus Christ knows each of us by name, just as He called Adam, Mary, Saul, and Joseph by name. He shared a vulnerable story of struggling as a young stake president when a boy stopped him at a ward conference to say his family prays for him every night — a direct answer to his prayer.',quotes:['He knows you. He who descended below all things knows how to heal your broken heart and make you whole again.','The question should never be "Will the Savior walk with me?" He will. The real question is, "Will I walk with Him?"','He reaches for us again and again, because He desires to lead us home — one by one, by name.'],scriptures:['Exodus 33:17','Alma 7:11-12'],themes:['known by God','individual worth','trials','prayer','Botswana']},
+
+{session:'Saturday Afternoon',speaker:'Elder Ulisses Soares',role:'Quorum of the Twelve Apostles',title:'I Am the True Vine',summary:'Elder Soares taught that abiding in Christ is not casual but a constant, conscious, sacred choice — letting His teachings govern our words and actions even in digital spaces. He warned that many "false vines" mimic Christ\'s voice while leading hearts astray. He used the Emmaus road story: the disciples invited the Savior to "abide with us," and their eyes were opened.',quotes:['Abiding in Christ is not an occasional or casual act; it is a constant, conscious, and sacred choice.','Only our Redeemer can truly redeem us. He is the way, the truth, and the life of the world.','Jesus Christ is the true vine. He lives. He rose from the dead, and His redeeming power is real.'],scriptures:['John 15:1,5','Colossians 2:8','Luke 24:29'],themes:['abide in Christ','true vine','false voices','digital world','Easter']},
+
+{session:'Sunday Morning',speaker:'President Dieter F. Uchtdorf',role:'Acting President, Quorum of the Twelve Apostles',title:'He Is Risen — The Empty Tomb',summary:'President Uchtdorf retold Mary and the women approaching the tomb on Easter morning — their grief and unanswered questions. He declared that the bold message of the empty tomb is that Jesus Christ is not merely a historical figure; He lives and is an active, ongoing influence. He gave two invitations echoing the angels: "Come, see" and "Go tell." He called all to become witnesses through courageous discipleship.',quotes:['We do not seek Him among the dead. He is Risen!','Because Jesus Christ conquered death, surely He can conquer any danger, confusion, or doubt we face.','Each morning let the daily rising sun remind us that Jesus Christ is the light that leads us through this life.','On this holy Easter morning, I offer my witness: He is risen.'],scriptures:['Luke 24:2-6','John 1:5','Matthew 28:7'],themes:['resurrection','Easter','empty tomb','witness','He is risen']},
+
+{session:'Sunday Morning',speaker:'President Emily Belle Freeman',role:'Young Women General President',title:'Best Days and Worst Days',summary:'President Freeman shared that her husband Greg\'s cancer returned while planning their daughter\'s wedding — going from best day to worst day in minutes. She used Peter\'s story across three scenes to teach that testimony is built over time through both best and worst days. She shared quotes from "For the Strength of Youth" and testified that because of Christ, our best days are ahead.',quotes:['God allows mortality to do its work in us — and that includes both best days and worst days.','Jesus wasn\'t shouting instructions from the shore or offering advice from the safety of the boat. He was in the water — with Peter, within reaching distance.','Joy is not the absence of sorrow in your life; it is the presence of Jesus Christ in your life.','Because of Him, no matter how bad things are right now, your best days are ahead.'],scriptures:['Matthew 16:13-16','Matthew 14:28-30','Luke 22:61'],themes:['trials','testimony','Peter','best days worst days','cancer','faith']},
+
+{session:'Sunday Morning',speaker:'Elder Pedro X. Larreal',role:'Seventy',title:"The Sacrament and the Savior's Love",summary:'Elder Larreal opened: "Do you know how much the Savior loves you?" He connected the sacrament to the Savior\'s love, noting how Christ repeatedly uses the pronoun "you" in Luke 22 — this is given FOR you, shed FOR you. The sacrament is the most sacred meeting in the Church. He called members to prepare more reverently and remove all distractions.',quotes:['Do you know how much the Savior loves you?','The Lord uses the pronoun "you" again and again to emphasize and remind us that the sacrament is for us — for you and for me!'],scriptures:['Luke 22:19-20','3 Nephi 9:20'],themes:['sacrament','love of Christ','Holy Ghost','reverence','atonement']},
+
+{session:'Sunday Morning',speaker:'Elder Edward B. Rowe',role:'Seventy',title:'Walk in His Footsteps — Jesus Christ as Our Guide',summary:'Elder Rowe shared working as a young lawyer in a post-war land mine zone where he had to step exactly where his guide Winta stepped. He applied this to following Christ through life\'s spiritual land mines. The Savior\'s invitation is constant, consistent, and inclusive: He inviteth all, and He denieth none. When we are wounded, He is the Master Healer.',quotes:['I need Jesus Christ to be my guide through life\'s journey amidst its spiritual land mines.','He inviteth all to come unto Him and partake of His goodness; and He denieth none that come unto Him.','I promise, I promise, you can too!'],scriptures:['Moroni 7:18','3 Nephi 9:13-14'],themes:['guide','follow Christ','repentance','healing','come follow me']},
+
+{session:'Sunday Morning',speaker:'Elder Ronald A. Rasband',role:'Quorum of the Twelve Apostles',title:'He Is Risen — Apostolic Witness',summary:'Elder Rasband bore a solemn apostolic testimony of the literal resurrection. He described the resurrected Christ\'s appearances — to Mary, on the Emmaus road, to the eleven, and to 2,500 souls in the Americas who felt the prints of the nails. He shared the tender story of his grandson Paxton, born with a rare chromosomal deletion, declaring Paxton\'s body will be resurrected whole and perfect.',quotes:['The fundamental principles of our religion are the testimony of the Apostles and Prophets, concerning Jesus Christ, that He died, was buried, and rose again the third day.','I love the image of Him stretching forth His hand.','I have graven thee upon the palms of my hands.','He is risen! He is risen! Tell it out with joyful voice!'],scriptures:['Isaiah 49:16','3 Nephi 11:14-15','Psalm 30:5','Alma 40:23'],themes:['resurrection','apostolic witness','Easter','He is risen','family','hope']},
+
+{session:'Sunday Morning',speaker:'Elder Dale G. Renlund',role:'Quorum of the Twelve Apostles',title:'Focus on the Savior — Keep Your Eye on the Ball',summary:'Elder Renlund opened with his toy poodle Lady trying to fetch two balls at once, getting overwhelmed, and giving up — a metaphor for modern life. The solution: focus on Jesus Christ above all else. Three Easter reasons: (1) Christ conquered death; (2) He saves us from sin — "If everyone, then anyone. If anyone, then even one. And if even one, then even you"; (3) He understands our challenges through His Atonement.',quotes:['If everyone, then anyone. If anyone, then even one. And if even one, then even you.','Because of Jesus Christ, sins for which we have sincerely repented leave no spiritual scar, track, or trace. There is no scarlet letter.','Open wide your broken heart and let your Savior in!'],scriptures:['Alma 34:31','Mosiah 26:30'],themes:['focus on Christ','atonement','resurrection','forgiveness','Easter']},
+
+{session:'Sunday Morning',speaker:'Elder Thierry K. Mutombo',role:'Seventy',title:'Christ Is Risen — Truly He Is Risen',summary:'Elder Mutombo from the DRC opened with the Paschal greeting: "Christ is risen / Truly, He is risen." He shared losing four children and how after the fourth death, his extended family demanded he and Nathalie separate per cultural tradition. He went inside, prayed, and came out with empty hands saying: "Nathalie is my eternal companion." He testified: no matter how dark your days, Sunday will come.',quotes:['Christ is risen. Truly, He is risen.','Nathalie is my eternal companion. We are striving together to build an eternal family, and the Savior is helping us achieve it.','No matter how dark your days are, please remember that Sunday will come if you faithfully keep the covenants that you made with the Lord.'],scriptures:['D&C 121:3'],themes:['Easter','covenant','eternal family','trials','Sunday will come','DRC']},
+
+{session:'Sunday Morning',speaker:'Elder Alan R. Walker',role:'Seventy',title:"God's Peculiar Treasure — Keeping Covenants",summary:'Elder Walker recalled searching for treasure as a boy in the Andes mountains, only finding glittering minerals. He highlighted the stunning scriptural reversal: we search for treasure, but God calls us His peculiar treasure. Becoming God\'s treasure requires obeying His voice and keeping covenants. The Lord asks not for perfection but for honest hearts and willing readiness.',quotes:['The Lord Himself speaks of us as His treasure.','The Lord does not ask for perfection all at once; rather He asks for honest and broken hearts, humble spirits, and a willing readiness to keep our covenants.'],scriptures:['Exodus 19:5','Moses 1:39','D&C 97:8'],themes:['covenant','peculiar treasure','worth of souls','obedience','sacrifice']},
+
+{session:'Sunday Morning',speaker:'President Dallin H. Oaks',role:'President of the Church',title:'The Resurrection and Loving Our Enemies',summary:'President Oaks spoke on two profound topics. First, the literal universal resurrection — mortal deficiencies are temporary, and this conviction changes our whole perspective of life. Second, in a "toxic" and hostile era, he called Christians to love their enemies as the Savior commanded. He shared a nurse who saw a despised patient as a child of God and called all disciples to be peacemakers.',quotes:['Mortal deficiencies are only temporary!','Love even your enemies!','How it would change the world if followers of Christ would forgo harsh and hurtful words in all their communications!'],scriptures:['Matthew 5:43-44','Matthew 5:9'],themes:['resurrection','Easter','peacemakers','love enemies','charity']},
+
+{session:'Sunday Afternoon',speaker:'President D. Todd Christofferson',role:'Second Counselor, First Presidency',title:'The Character of Christ',summary:'President Christofferson used Peter\'s question — "What manner of persons ought ye to be?" — to explore Christlike character. He taught that character grows from the heart, not just behavior, and identified three motivating desires of Christ\'s heart: pure love (charity), desire to foster others\' happiness, and desire to glorify the Father. He shared the story of a mother whose daughter died yet immediately turned outward to care for other mothers.',quotes:['Christlike character grows out of a Christlike heart.','Character is revealed in the power to discern the suffering of other people when we ourselves are suffering.','The great opportunity before us is to become the people God needs us to be.'],scriptures:['2 Peter 3:11','Mosiah 5:2','Moroni 7:47'],themes:['character of Christ','charity','mighty change of heart','virtue','integrity']},
+
+{session:'Sunday Afternoon',speaker:'Elder Chi Hong (Sam) Wong',role:'Seventy',title:'Remember, Remember — Five Lessons from the Book of Mormon',summary:'Elder Wong identified five "Remember, remember" verses in the Book of Mormon and organized his entire talk around them as divine reminders: (1) keep commandments for never-ending happiness; (2) disobedience cuts us off from God; (3) salvation only through Christ\'s atoning blood; (4) build on the rock of Christ; (5) we have agency to act wisely.',quotes:['He would put His reminders in the Book of Mormon, just like our parents would.','We can only be saved through the atoning blood of Jesus Christ.','We will not fall if we build our foundation upon Jesus Christ.'],scriptures:['Mosiah 2:41','Helaman 5:9','Helaman 5:12'],themes:['Book of Mormon','remember','salvation','rock of Christ','agency']},
+
+{session:'Sunday Afternoon',speaker:'Elder Aaron T. Hall',role:'Seventy',title:'I Glory in My Jesus',summary:'Elder Hall centered his talk on Nephi\'s tender phrase "I glory in my Jesus" (2 Nephi 33:6), exploring what it means to have a personal, beloved relationship with the Savior rather than merely knowing His name. He named six roles of Christ in which he glories — Redeemer, Good Shepherd, Healer, Advocate, Lawgiver, and Deliverer — and invited all to find the names most meaningful to them.',quotes:['"I glory in my Jesus."','Behold, who can glory too much in the Lord? Yea, who can say too much of His great power, and of His mercy?','He is my Jesus and yours.','What names of Jesus Christ help you glory in Him? Perhaps Master? Counselor? Or Friend?'],scriptures:['2 Nephi 33:6','Alma 26:16','D&C 88:63'],themes:['names of Christ','personal relationship','Nephi','glory in Jesus']},
+
+{session:'Sunday Afternoon',speaker:'President Susan H. Porter',role:'Primary General President',title:'Here Am I, Send Me — A Message to Children',summary:'President Porter spoke directly to children, reminding them their spirits are much older than their earthly age and that they were born with gifts and a purpose. She used the story of the boy who gave Jesus five loaves and two fishes — he offered what he had without knowing how it would feed thousands. She invited children to say "Here am I, send me" and act on small impressions from the Spirit.',quotes:['You were born with gifts. You have a purpose. And you have the ability to make a difference for good.','When you say "Here am I, send me," Heavenly Father can take something small and simple and make it great!'],scriptures:['Abraham 3:27','John 6:9-13'],themes:['children','Primary','here am I send me','small and simple things']},
+
+{session:'Sunday Afternoon',speaker:'Elder Neil L. Andersen',role:'Quorum of the Twelve Apostles',title:'Eternal Marriage — An Eternal Journey',summary:'Elder Andersen spoke about the sealing power restored through Elijah and the centrality of eternal marriage. He shared the deeply moving story of a couple sealed in the temple whose wife developed severe depression and later cancer — the husband served her with incredible love for decades, holding to the promise that their trials were "but a small moment." Eternal marriage is not a short-term experiment but an eternal journey of becoming.',quotes:['"For time and for all eternity."','Eternal marriage is an eternal journey.','As we increase our love for the Savior, our love for each other grows.','They did it together through the final day of her mortal journey.'],scriptures:['Matthew 16:19','D&C 2','Isaiah 40:29-31'],themes:['eternal marriage','sealing power','Elijah','temple','covenant']},
+
+{session:'Sunday Afternoon',speaker:'Elder Quentin L. Cook',role:'Quorum of the Twelve Apostles',title:'The Kirtland Temple Vision and the Keys of Elijah',summary:'Elder Cook noted this Easter Sunday was the 190th anniversary of the Kirtland Temple vision on Easter Sunday 1836. He gave rich historical explanation of Elijah\'s role — at the Transfiguration, in the Kirtland Temple — and the sealing keys he restored. He shared his experience visiting the Garden Tomb in Jerusalem with Elder Holland, testifying you don\'t need to be there physically to feel those sacred truths.',quotes:['You do not need to physically visit Jerusalem to feel the same things that we felt that day.','Without these keys, there are no eternal families and the whole earth would be utterly wasted.'],scriptures:['D&C 2:1-3','D&C 110:13-16','Matthew 17:1-3'],themes:['Elijah','sealing keys','temple','Kirtland','restoration','Easter']},
+
+{session:'Sunday Afternoon',speaker:'Elder Taniela B. Wakolo',role:'Seventy',title:'Come Together — Part-Member Families and Patient Faith',summary:'Elder Wakolo, who himself waited eight years before being baptized while his wife Anita faithfully kept her covenants, shared four stories of patient faith in part-member families from New Zealand, Australia, Utah, and Fiji. His central message: the gospel is not a wedge to divide families but a bridge to unite them eternally. To those waiting: do not give up.',quotes:['"My only regret? I wish I had been baptized sooner."','The gospel of Jesus Christ is not a wedge to divide families but a bridge to unite them, eternally.','God keeps His promises — but in His timing.','These stories are not about statistics. They are about souls.'],scriptures:['Moses 1:39'],themes:['part-member families','eternal marriage','patient faith','Fiji','come together']},
+
+{session:'Sunday Afternoon',speaker:'Elder Gerrit W. Gong',role:'Quorum of the Twelve Apostles',title:'Abide With Us — The Road to Emmaus',summary:'Elder Gong wove together the Road to Emmaus narrative with the Conference\'s Solemn Assembly. He taught that the Emmaus story reveals a covenant pattern: Christ walks with us even when unrecognized, His words cause hearts to burn, and He opens our eyes through the breaking of bread (the sacrament). He promised the First Comforter (Holy Ghost) and Second Comforter (the Savior Himself). He closed: "No one should walk alone."',quotes:['Though we did not recognize Him before, He has been walking with us all along.','No one sits alone, and no one should walk alone their road to Emmaus unseen.','Let us see and walk together in His love.'],scriptures:['Luke 24:13-35','John 14:16-18','John 15:4-5'],themes:['Emmaus','abide in Christ','sacrament','Holy Ghost','walk together']},
+
+{session:'Sunday Afternoon',speaker:'President Dallin H. Oaks',role:'President of the Church',title:'Closing Remarks',summary:'President Oaks offered brief closing remarks, summarizing the conference as two days of worship, learning, and uniting testimonies on Jesus Christ. He highlighted the themes of eternal marriage and families, the pure love of Christ, and ministering one by one. He invited all to study and ponder the conference messages prayerfully, promising that as we treasure and act upon them, the Lord will continue to teach us with personal revelation.',quotes:['Jesus Christ is the way to peace in this world, and eternal life in the world to come.','Look to God and live.'],scriptures:['D&C 84:85'],themes:['closing','Jesus Christ is the way','eternal families','personal revelation']}
+];
+
+function esc(s){return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');}
+
+function initTabs(){
+  const el=document.getElementById('session-tabs');
+  el.innerHTML=SESSIONS.map(s=>`<button class="stab${s===currentSession?' active':''}" onclick="switchSession('${s.replace(/'/g,"\\'")}')">${esc(s)}</button>`).join('');
 }
 
-// ── AUTH ─────────────────────────────────────────────────────────
-async function doLogin(){
-  const email=document.getElementById('login-email').value.trim();
-  const pass=document.getElementById('login-pass').value;
-  setMsg('login-msg','');
-  const {data,error}=await sb.auth.signInWithPassword({email,password:pass});
-  if(error) return setMsg('login-msg',error.message,true);
-  await onLogin(data.user);
-  closeModal('login-modal');
-  if(currentConf){renderAdminBtns();renderSubmitSection();}
+function switchSession(s){
+  currentSession=s;
+  document.getElementById('search').value='';
+  initTabs();
+  renderTalks();
+  window.scrollTo({top:document.querySelector('.session-nav').offsetTop-10,behavior:'smooth'});
 }
 
-async function doSignup(){
-  const name=document.getElementById('signup-name').value.trim();
-  const email=document.getElementById('signup-email').value.trim();
-  const pass=document.getElementById('signup-pass').value;
-  if(!name) return setMsg('signup-msg','Please enter your name.',true);
-  setMsg('signup-msg','');
-  const {error}=await sb.auth.signUp({email,password:pass,options:{data:{display_name:name}}});
-  if(error) return setMsg('signup-msg',error.message,true);
-  setMsg('signup-msg','Account created! Check your email to confirm, then sign in.',false);
-}
-
-async function doLogout(){
-  await sb.auth.signOut();currentUser=null;isAdmin=false;renderNav();showPage('home');
-}
-
-async function onLogin(user){
-  currentUser=user;isAdmin=ADMIN_EMAILS.includes(user.email);renderNav();
-}
-
-function renderNav(){
-  const el=document.getElementById('nav-right');
-  if(currentUser){
-    const name=currentUser.user_metadata?.display_name||currentUser.email.split('@')[0];
-    const ini=name.slice(0,2).toUpperCase();
-    el.innerHTML=`<span class="user-chip"><span class="user-dot">${ini}</span>${name}${isAdmin?' ⭐':''}</span><button class="btn btn-ghost btn-sm" onclick="doLogout()">Sign out</button>`;
-  } else {
-    el.innerHTML=`<button class="btn btn-ghost btn-sm" onclick="openModal('login-modal')">Sign in</button><button class="btn btn-primary btn-sm" onclick="openModal('signup-modal')">Join free</button>`;
-  }
-}
-
-// ── NEWSLETTER SUBSCRIBE ─────────────────────────────────────────
-async function subscribeEmail(){
-  const email=document.getElementById('subscribe-email').value.trim();
-  if(!email) return alert('Please enter your email.');
-  try {
-    const res=await fetch(`https://api.beehiiv.com/v2/publications/${BEEHIIV_PUB}/subscriptions`,{
-      method:'POST',
-      headers:{'Content-Type':'application/json'},
-      body:JSON.stringify({email,reactivate_existing:true,send_welcome_email:true})
-    });
-    if(res.ok){
-      document.getElementById('subscribe-email').value='';
-      alert('✅ You\'re subscribed! Your first email arrives next Thursday.');
-    } else {
-      alert('Something went wrong — please try again.');
-    }
-  } catch(e){
-    alert('Could not subscribe right now. Try again shortly.');
-  }
-}
-
-// ── CONFERENCES ───────────────────────────────────────────────────
-async function loadConferences(){
-  document.getElementById('add-conf-btn').style.display=isAdmin?'block':'none';
-  const el=document.getElementById('conferences-list');
-  el.innerHTML='<div class="loading-wrap"><div class="spinner"></div></div>';
-  const {data}=await sb.from('conferences').select('*').order('created_at',{ascending:false});
-  if(!data?.length){el.innerHTML=`<div class="empty"><p>${isAdmin?'No conferences yet — add the first one!':'No conferences yet.'}</p></div>`;return;}
-  el.innerHTML='';
-  for(const c of data){
-    const {count}=await sb.from('talks').select('*',{count:'exact',head:true}).eq('conference_id',c.id).eq('status','approved');
-    const {count:tc}=await sb.from('transcripts').select('*',{count:'exact',head:true});
-    const div=document.createElement('div');
-    div.className='conf-card fade-up';
-    div.onclick=()=>openConference(c.id);
-    div.innerHTML=`<div><h3>${esc(c.title)}</h3><p>${esc(c.date_label||'')}${c.description?' · '+esc(c.description):''}</p></div><div class="conf-meta"><span class="conf-pill">${count||0} talks</span><span style="color:var(--text-lighter)">›</span></div>`;
-    el.appendChild(div);
-  }
-}
-
-async function addConference(){
-  const title=document.getElementById('conf-title').value.trim();
-  const date=document.getElementById('conf-date').value.trim();
-  const desc=document.getElementById('conf-desc').value.trim();
-  if(!title) return setMsg('conf-msg','Title is required.',true);
-  const {error}=await sb.from('conferences').insert({title,date_label:date,description:desc});
-  if(error) return setMsg('conf-msg',error.message,true);
-  closeModal('conf-modal');
-  ['conf-title','conf-date','conf-desc'].forEach(id=>document.getElementById(id).value='');
-  loadConferences();
-}
-
-async function deleteConference(id){
-  if(!confirm('Delete this entire conference and all talks?')) return;
-  await sb.from('talks').delete().eq('conference_id',id);
-  await sb.from('conferences').delete().eq('id',id);
-  showPage('home');
-}
-
-// ── CONFERENCE PAGE ───────────────────────────────────────────────
-async function openConference(id){
-  currentConf=id;currentSession='Saturday Morning';
-  const {data:conf}=await sb.from('conferences').select('*').eq('id',id).single();
-  document.getElementById('conf-page-title').textContent=conf.title;
-  document.getElementById('conf-page-sub').textContent=conf.date_label||'';
-  renderAdminBtns();renderSessionTabs();renderSubmitSection();
-  document.getElementById('insights-wrapper').style.display='block';
-  showPage('conference');
-  loadTalks();
-  loadInsights();
-}
-
-function renderAdminBtns(){
-  const el=document.getElementById('conf-admin-btns');
-  if(!el) return;
-  if(isAdmin){
-    el.innerHTML=`<button class="btn btn-primary btn-sm" onclick="openModal('talk-modal')">+ Add talk</button><button class="btn btn-red btn-sm" onclick="deleteConference('${currentConf}')">Delete conference</button>`;
-    document.getElementById('pending-section').style.display='block';
-    document.getElementById('email-section').style.display='block';
-    document.getElementById('admin-analyze-btn').style.display='block';
-    loadPending();loadEmailQueue();
-  } else {
-    el.innerHTML='';
-    document.getElementById('pending-section').style.display='none';
-    document.getElementById('email-section').style.display='none';
-    document.getElementById('admin-analyze-btn').style.display='none';
-  }
-}
-
-function renderSubmitSection(){
-  const sp=document.getElementById('submit-section');
-  const lp=document.getElementById('submit-login-prompt');
-  if(currentUser){sp.style.display='block';lp.style.display='none';}
-  else{sp.style.display='none';lp.style.display='block';}
-}
-
-function renderSessionTabs(){
-  document.getElementById('session-tabs').innerHTML=SESSIONS.map(s=>`<button class="stab ${s===currentSession?'active':''}" onclick="switchSession('${s}')">${s}</button>`).join('');
-}
-
-function switchSession(s){currentSession=s;renderSessionTabs();loadTalks();}
-
-// ── TALKS ─────────────────────────────────────────────────────────
-async function loadTalks(){
+function renderTalks(){
+  const q=(document.getElementById('search').value||'').toLowerCase().trim();
+  const talks=TALKS.filter(t=>{
+    if(q) return (
+      t.session.toLowerCase().includes(q)||
+      t.speaker.toLowerCase().includes(q)||
+      t.title.toLowerCase().includes(q)||
+      t.summary.toLowerCase().includes(q)||
+      t.themes.some(th=>th.toLowerCase().includes(q))||
+      t.quotes.some(qt=>qt.toLowerCase().includes(q))
+    );
+    return t.session===currentSession;
+  });
+  const label=q?`Search: "${q}"`:currentSession;
+  document.getElementById('session-label').textContent=label;
+  document.getElementById('session-count').textContent=`${talks.length} talk${talks.length!==1?'s':''}`;
   const el=document.getElementById('talks-list');
-  el.innerHTML='<div class="loading-wrap"><div class="spinner"></div></div>';
-  const {data}=await sb.from('talks').select('*').eq('conference_id',currentConf).eq('session',currentSession).eq('status','approved').order('created_at');
-  if(!data?.length){
-    el.innerHTML=`<div class="empty"><p>No talks added for this session yet.</p>${isAdmin?'<p style="margin-top:10px"><button class="btn btn-primary btn-sm" onclick="openModal(\'talk-modal\')">+ Add the first talk</button></p>':''}</div>`;
-    return;
-  }
-  el.innerHTML='';
-  for(const talk of data) el.appendChild(await buildTalkCard(talk));
+  if(!talks.length){el.innerHTML='<div class="empty-state">No talks found.</div>';return;}
+  el.innerHTML=talks.map((t,i)=>buildCard(t,i)).join('');
 }
 
-async function buildTalkCard(talk){
-  const {data:reacts}=await sb.from('reactions').select('emoji,user_id').eq('talk_id',talk.id);
-  const rm={};
-  EMOJIS.forEach(({e})=>rm[e]={count:0,mine:false});
-  (reacts||[]).forEach(r=>{if(rm[r.emoji]){rm[r.emoji].count++;if(currentUser&&r.user_id===currentUser.id)rm[r.emoji].mine=true;}});
-  const {count:cc}=await sb.from('comments').select('*',{count:'exact',head:true}).eq('talk_id',talk.id);
-  const {data:transcriptData}=await sb.from('transcripts').select('formatted_text,raw_text').eq('talk_id',talk.id).single().catch(()=>({data:null}));
-  const quotes=talk.quotes?talk.quotes.split('\n').filter(Boolean):[];
-  const scrips=talk.scriptures?talk.scriptures.split(',').map(s=>s.trim()).filter(Boolean):[];
-  const ini=(talk.speaker||'?').split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
-  const paras=(talk.summary||'').split(/\n\n+/).filter(Boolean);
-  const proseHtml=paras.map(p=>`<p>${esc(p.replace(/\n/g,' '))}</p>`).join('');
-
-  const div=document.createElement('article');
-  div.className='talk-article fade-up';
-  div.id='talk-'+talk.id;
-  div.innerHTML=`
-    <div class="talk-body">
-      <div class="talk-top">
-        <div class="talk-author">
-          <div class="avatar">${ini}</div>
-          <div>
-            <div class="author-name">${esc(talk.speaker)}</div>
-            <span class="session-tag">${esc(talk.session)}</span>
-          </div>
-        </div>
-        <div style="display:flex;gap:6px">
-          ${isAdmin?`<button class="btn btn-red btn-xs" onclick="deleteTalk('${talk.id}')">Delete</button>`:''}
-        </div>
+function buildCard(t,i){
+  const ini=t.speaker.split(' ').map(w=>w[0]).join('').slice(0,2).toUpperCase();
+  const quotesHtml=t.quotes.map(q=>`<p class="talk-quote">${esc(q)}</p>`).join('');
+  const scripsHtml=t.scriptures.map(s=>`<span class="scripture-pill">${esc(s)}</span>`).join('');
+  const themesHtml=t.themes.map(th=>`<span class="theme-tag">${esc(th)}</span>`).join('');
+  return `<article class="talk-card" style="animation-delay:${i*55}ms">
+    <div class="talk-inner">
+      <div class="talk-meta">
+        <div class="talk-avatar">${ini}</div>
+        <div><div class="talk-speaker">${esc(t.speaker)}</div><div class="talk-role">${esc(t.role)}</div></div>
+        <span class="talk-session-tag">${esc(t.session)}</span>
       </div>
-      ${talk.title?`<h2 class="talk-headline">"${esc(talk.title)}"</h2>`:''}
-      ${proseHtml?`<div class="talk-prose">${proseHtml}</div>`:''}
-      ${quotes.length?`<div style="margin-bottom:18px">${quotes.map(q=>`<div class="pullquote"><p>${esc(q)}</p></div>`).join('')}</div>`:''}
-      ${scrips.length?`<div class="scripture-row">${scrips.map(s=>`<span class="scripture-tag">📖 ${esc(s)}</span>`).join('')}</div>`:''}
-
-      <!-- TRANSCRIPT SECTION -->
-      <div class="transcript-section">
-        ${transcriptData ? `
-          <div class="transcript-toggle" onclick="toggleTranscript('${talk.id}')">
-            <h4>📄 Full Transcript</h4>
-            <span style="font-size:0.78rem;color:var(--text-soft)" id="transcript-toggle-label-${talk.id}">Show ↓</span>
-          </div>
-          <div class="transcript-body" id="transcript-body-${talk.id}">
-            <div class="talk-prose transcript-prose">${esc(transcriptData.formatted_text||transcriptData.raw_text)}</div>
-          </div>
-        ` : `
-          <button class="submit-transcript-btn" onclick="${currentUser?`openTranscriptModal('${talk.id}')`:`openModal('login-modal')`}">
-            📄 ${currentUser?'Submit full transcript':'Sign in to submit the full transcript'}
-          </button>
-        `}
-      </div>
+      <h2 class="talk-title">${esc(t.title)}</h2>
+      <p class="talk-summary">${esc(t.summary)}</p>
+      ${t.quotes.length?`<div class="talk-quotes">${quotesHtml}</div>`:''}
+      ${t.scriptures.length?`<div class="talk-footer">${scripsHtml}</div>`:''}
+      ${t.themes.length?`<div class="themes-row">${themesHtml}</div>`:''}
     </div>
-
-    <div class="talk-footer">
-      ${EMOJIS.map(({e,l})=>`<button class="react-btn ${rm[e].mine?'active':''}" title="${l}" onclick="toggleReaction('${talk.id}','${e}',this)">${e} <span class="react-n">${rm[e].count||''}</span></button>`).join('')}
-      <button class="comment-tog" onclick="toggleComments('${talk.id}')">💬 ${cc||0} comment${cc===1?'':'s'}</button>
-    </div>
-
-    <div class="comments-area" id="comments-${talk.id}">
-      <div id="comments-list-${talk.id}"></div>
-      ${currentUser?`<div class="c-input-row"><input type="text" id="comment-input-${talk.id}" placeholder="Add a thought..." onkeydown="if(event.key==='Enter')postComment('${talk.id}')" /><button class="btn btn-primary btn-sm" onclick="postComment('${talk.id}')">Post</button></div>`:`<p style="font-size:0.82rem;color:var(--text-soft);margin-top:12px"><span style="color:var(--accent);cursor:pointer;font-weight:500" onclick="openModal('login-modal')">Sign in</span> to add your thoughts.</p>`}
-    </div>
-  `;
-  return div;
+  </article>`;
 }
 
-function toggleTranscript(talkId){
-  const body=document.getElementById('transcript-body-'+talkId);
-  const label=document.getElementById('transcript-toggle-label-'+talkId);
-  const open=body.classList.toggle('open');
-  label.textContent=open?'Hide ↑':'Show ↓';
+function subscribeNewsletter(e){
+  e.preventDefault();
+  fetch('https://api.beehiiv.com/v2/publications/pub_4e7f9655-5165-4d25-8751-bc7737a837b6/subscriptions',{
+    method:'POST',
+    headers:{'Content-Type':'application/json'},
+    body:JSON.stringify({email:document.getElementById('nl-email').value,reactivate_existing:true,send_welcome_email:true})
+  }).catch(()=>{});
+  document.querySelector('.newsletter-bar').innerHTML='<p style="font-size:1.05rem;padding:4px 0">&#127881; You\'re subscribed! Check your inbox to confirm.</p>';
 }
 
-function openTranscriptModal(talkId){
-  currentTranscriptTalkId=talkId;
-  setMsg('transcript-msg','');
-  document.getElementById('transcript-raw').value='';
-  openModal('transcript-modal');
-}
-
-async function submitTranscript(){
-  if(!currentUser) return openModal('login-modal');
-  const raw=document.getElementById('transcript-raw').value.trim();
-  if(!raw) return setMsg('transcript-msg','Please paste the transcript.',true);
-  const btn=document.getElementById('transcript-submit-btn');
-  btn.textContent='Formatting with AI...';btn.disabled=true;
-  setMsg('transcript-msg','');
-  try {
-    const name=currentUser.user_metadata?.display_name||currentUser.email.split('@')[0];
-    const res=await fetch(`${FUNCTIONS_URL}/format-transcript`,{
-      method:'POST',
-      headers:{'Content-Type':'application/json','Authorization':`Bearer ${SUPABASE_KEY}`},
-      body:JSON.stringify({raw_text:raw,talk_id:currentTranscriptTalkId,submitted_by:name})
-    });
-    const data=await res.json();
-    if(data.error) throw new Error(data.error);
-    setMsg('transcript-msg','✅ Transcript formatted and saved! Refreshing talks...',false);
-    setTimeout(()=>{closeModal('transcript-modal');loadTalks();loadInsights();},1500);
-  } catch(e){
-    setMsg('transcript-msg',e.message,true);
-  } finally {
-    btn.textContent='Format & Submit';btn.disabled=false;
-  }
-}
-
-async function addTalk(){
-  const speaker=document.getElementById('talk-speaker').value.trim();
-  const session=document.getElementById('talk-session').value;
-  const title=document.getElementById('talk-title-input').value.trim();
-  const summary=document.getElementById('talk-summary').value.trim();
-  const quotes=document.getElementById('talk-quotes').value.trim();
-  const scriptures=document.getElementById('talk-scriptures').value.trim();
-  if(!speaker||!summary) return setMsg('talk-msg','Speaker and summary are required.',true);
-  const {error}=await sb.from('talks').insert({conference_id:currentConf,speaker,session,title,summary,quotes,scriptures,status:'approved'});
-  if(error) return setMsg('talk-msg',error.message,true);
-  closeModal('talk-modal');
-  ['talk-speaker','talk-title-input','talk-summary','talk-quotes','talk-scriptures'].forEach(id=>document.getElementById(id).value='');
-  if(session===currentSession) loadTalks();
-}
-
-async function deleteTalk(id){
-  if(!confirm('Delete this talk?')) return;
-  await sb.from('comments').delete().eq('talk_id',id);
-  await sb.from('reactions').delete().eq('talk_id',id);
-  await sb.from('transcripts').delete().eq('talk_id',id);
-  await sb.from('talks').delete().eq('id',id);
-  loadTalks();
-}
-
-// ── REACTIONS + COMMENTS ─────────────────────────────────────────
-async function toggleReaction(talkId,emoji,btn){
-  if(!currentUser) return openModal('login-modal');
-  const {data:ex}=await sb.from('reactions').select('id').eq('talk_id',talkId).eq('user_id',currentUser.id).eq('emoji',emoji).single().catch(()=>({data:null}));
-  const cn=btn.querySelector('.react-n');let c=parseInt(cn.textContent)||0;
-  if(ex){await sb.from('reactions').delete().eq('id',ex.id);btn.classList.remove('active');cn.textContent=c>1?c-1:'';}
-  else{await sb.from('reactions').insert({talk_id:talkId,user_id:currentUser.id,emoji});btn.classList.add('active');cn.textContent=c+1;}
-}
-
-async function toggleComments(talkId){
-  const el=document.getElementById('comments-'+talkId);
-  if(el.classList.contains('open')){el.classList.remove('open');return;}
-  el.classList.add('open');loadComments(talkId);
-}
-
-async function loadComments(talkId){
-  const el=document.getElementById('comments-list-'+talkId);
-  el.innerHTML='<div class="spinner" style="margin:10px 0"></div>';
-  const {data}=await sb.from('comments').select('*').eq('talk_id',talkId).order('created_at');
-  if(!data?.length){el.innerHTML='<p style="font-size:0.82rem;color:var(--text-soft);padding:4px 0">No comments yet.</p>';return;}
-  el.innerHTML=data.map(c=>{
-    const ini=(c.display_name||'?').slice(0,2).toUpperCase();
-    return `<div class="comment-item"><div class="comment-hd"><div class="c-avatar">${ini}</div><span class="c-name">${esc(c.display_name||'Member')}</span><span class="c-time">${timeAgo(c.created_at)}</span>${isAdmin?`<button class="btn btn-red btn-xs" style="margin-left:auto" onclick="deleteComment('${c.id}','${talkId}')">Remove</button>`:''}</div><div class="c-body">${esc(c.body)}</div></div>`;
-  }).join('');
-}
-
-async function postComment(talkId){
-  if(!currentUser) return openModal('login-modal');
-  const input=document.getElementById('comment-input-'+talkId);
-  const body=input.value.trim();if(!body) return;
-  const name=currentUser.user_metadata?.display_name||currentUser.email.split('@')[0];
-  await sb.from('comments').insert({talk_id:talkId,user_id:currentUser.id,display_name:name,body});
-  input.value='';loadComments(talkId);
-  const {count}=await sb.from('comments').select('*',{count:'exact',head:true}).eq('talk_id',talkId);
-  const tog=document.querySelector(`#talk-${talkId} .comment-tog`);
-  if(tog) tog.textContent=`💬 ${count} comment${count===1?'':'s'}`;
-}
-
-async function deleteComment(cId,talkId){await sb.from('comments').delete().eq('id',cId);loadComments(talkId);}
-
-// ── SUBMISSIONS ───────────────────────────────────────────────────
-async function submitSummary(){
-  if(!currentUser) return openModal('login-modal');
-  const speaker=document.getElementById('sub-speaker').value.trim();
-  const session=document.getElementById('sub-session').value;
-  const title=document.getElementById('sub-title').value.trim();
-  const summary=document.getElementById('sub-summary').value.trim();
-  const quotes=document.getElementById('sub-quotes').value.trim();
-  const scriptures=document.getElementById('sub-scriptures').value.trim();
-  if(!speaker||!summary) return setMsg('submit-msg','Speaker and summary are required.',true);
-  const name=currentUser.user_metadata?.display_name||currentUser.email.split('@')[0];
-  const {error}=await sb.from('talks').insert({conference_id:currentConf,speaker,session,title,summary,quotes,scriptures,status:'pending',submitted_by:name});
-  if(error) return setMsg('submit-msg',error.message,true);
-  setMsg('submit-msg','Submitted! An editor will review your notes. Thank you!',false);
-  ['sub-speaker','sub-title','sub-summary','sub-quotes','sub-scriptures'].forEach(id=>document.getElementById(id).value='');
-}
-
-async function loadPending(){
-  const {data}=await sb.from('talks').select('*').eq('conference_id',currentConf).eq('status','pending').order('created_at');
-  const el=document.getElementById('pending-list');
-  if(!data?.length){el.innerHTML='<p style="font-size:0.85rem;color:var(--text-soft)">No pending submissions.</p>';return;}
-  el.innerHTML=data.map(t=>`
-    <div class="pending-panel">
-      <span class="pending-label">Pending review</span>
-      <div class="pending-spk">${esc(t.speaker)} — ${esc(t.session)}${t.title?' · "'+esc(t.title)+'"':''}</div>
-      <div class="pending-sum">${esc(t.summary)}</div>
-      <div class="pending-by">Submitted by ${esc(t.submitted_by||'Anonymous')}</div>
-      <div style="display:flex;gap:8px"><button class="btn btn-approve btn-xs" onclick="approveTalk('${t.id}')">✓ Approve</button><button class="btn btn-red btn-xs" onclick="rejectTalk('${t.id}')">✕ Reject</button></div>
-    </div>`).join('');
-}
-
-async function approveTalk(id){await sb.from('talks').update({status:'approved'}).eq('id',id);loadPending();loadTalks();}
-async function rejectTalk(id){await sb.from('talks').delete().eq('id',id);loadPending();}
-
-// ── DATA SCIENCE ─────────────────────────────────────────────────
-async function loadInsights(){
-  // Count transcripts for this conference
-  const {data:talkIds}=await sb.from('talks').select('id').eq('conference_id',currentConf).eq('status','approved');
-  if(!talkIds?.length) return;
-  const ids=talkIds.map(t=>t.id);
-  const {count:tc}=await sb.from('transcripts').select('*',{count:'exact',head:true}).in('talk_id',ids);
-  const transcriptCount=tc||0;
-  const pct=Math.min((transcriptCount/10)*100,100);
-
-  // Update counters
-  document.getElementById('counter-bar').style.width=pct+'%';
-  document.getElementById('counter-text').textContent=`${transcriptCount} / 10 transcripts`;
-  document.getElementById('blur-bar').style.width=pct+'%';
-  document.getElementById('blur-count').textContent=`${transcriptCount} of 10 transcripts submitted`;
-
-  if(currentUser){
-    document.getElementById('submit-first-transcript').style.display='inline-flex';
-  }
-
-  if(transcriptCount>=10){
-    // Load existing insights
-    const {data:ins}=await sb.from('conference_insights').select('*').eq('conference_id',currentConf).single().catch(()=>({data:null}));
-    if(ins){
-      showInsights(ins);
-    } else if(isAdmin){
-      // Show analyze button
-      document.getElementById('insights-blurred').querySelector('.insights-blur-overlay').innerHTML=`
-        <div class="blur-icon">🚀</div>
-        <div class="blur-title">Ready to Analyze!</div>
-        <div class="blur-sub">10+ transcripts have been submitted. Run the AI analysis to unlock insights.</div>
-        <button class="btn btn-purple" onclick="runAnalysis()">🔬 Analyze Conference Now</button>
-      `;
-    }
-  }
-}
-
-function showInsights(ins){
-  document.getElementById('insights-blurred').style.display='none';
-  document.getElementById('insights-unlocked').style.display='block';
-
-  // Summary box
-  const sb2=document.getElementById('conf-summary-box');
-  if(ins.themes?.[0]) sb2.innerHTML=`<p><strong>Dominant theme:</strong> ${esc(ins.themes[0]?.name||'')} — ${esc(ins.themes[0]?.description||'')}</p>`;
-
-  // Build grid
-  const grid=document.getElementById('insights-grid');
-  grid.innerHTML='';
-
-  // Themes card
-  if(ins.themes?.length){
-    const max=ins.themes[0].count||1;
-    const card=document.createElement('div');card.className='insight-card';
-    card.innerHTML=`<h4>🏷️ Key Themes</h4>${ins.themes.slice(0,6).map(t=>`
-      <div class="theme-item">
-        <span class="theme-name">${esc(t.name)}</span>
-        <div class="theme-bar-wrap"><div class="theme-bar" style="width:${Math.round((t.count/max)*100)}%"></div></div>
-        <span class="theme-count">${t.count}</span>
-      </div>`).join('')}`;
-    grid.appendChild(card);
-  }
-
-  // Scriptures card
-  if(ins.top_scriptures?.length){
-    const card=document.createElement('div');card.className='insight-card';
-    card.innerHTML=`<h4>📖 Top Scriptures</h4>${ins.top_scriptures.slice(0,6).map(s=>`
-      <div class="scripture-item"><span>${esc(s.reference)}</span><span style="font-weight:600;color:var(--accent)">${s.count}x</span></div>`).join('')}`;
-    grid.appendChild(card);
-  }
-
-  // Sentiment card
-  if(ins.sentiment?.length){
-    const card=document.createElement('div');card.className='insight-card';
-    card.innerHTML=`<h4>😊 Talk Sentiment</h4>${ins.sentiment.slice(0,5).map(s=>`
-      <div class="sentiment-item"><span>${esc(s.speaker)}</span><span class="sentiment-score">${esc(s.tone)}</span></div>`).join('')}`;
-    grid.appendChild(card);
-  }
-
-  // Word cloud card
-  if(ins.word_frequency?.length){
-    const card=document.createElement('div');card.className='insight-card';
-    const words=ins.word_frequency.slice(0,20);
-    const maxW=words[0]?.count||1;
-    card.innerHTML=`<h4>💬 Word Cloud</h4><div class="word-cloud">${words.map(w=>{
-      const size=w.count/maxW;
-      const cls=size>0.7?'big':size>0.4?'med':'';
-      return `<span class="word-tag ${cls}">${esc(w.word)}</span>`;
-    }).join('')}</div>`;
-    grid.appendChild(card);
-  }
-}
-
-async function runAnalysis(){
-  if(!isAdmin) return;
-  const btn=document.querySelector('#admin-analyze-btn button');
-  btn.textContent='Analyzing... (30s)';btn.disabled=true;
-  try {
-    const res=await fetch(`${FUNCTIONS_URL}/analyze-conference`,{
-      method:'POST',
-      headers:{'Content-Type':'application/json','Authorization':`Bearer ${SUPABASE_KEY}`},
-      body:JSON.stringify({conference_id:currentConf})
-    });
-    const data=await res.json();
-    if(data.error) throw new Error(data.error);
-    showInsights({
-      themes:data.insights.themes,
-      top_scriptures:data.insights.top_scriptures,
-      sentiment:data.insights.sentiment,
-      word_frequency:data.insights.word_frequency
-    });
-  } catch(e){
-    alert('Analysis failed: '+e.message);
-  } finally {
-    btn.textContent='🔬 Re-analyze Conference';btn.disabled=false;
-  }
-}
-
-// ── EMAIL QUEUE ───────────────────────────────────────────────────
-async function loadEmailQueue(){
-  const {data:talks}=await sb.from('talks').select('id').eq('conference_id',currentConf).eq('status','approved');
-  const totalWeeks=Math.min((talks?.length||0)*2,26);
-  const {data:emails}=await sb.from('email_queue').select('*').eq('conference_id',currentConf).order('week_number');
-  const emailMap={};(emails||[]).forEach(e=>emailMap[e.week_number]=e);
-  const el=document.getElementById('email-weeks');
-  if(!totalWeeks){el.innerHTML='<p style="font-size:0.82rem;color:var(--text-soft)">Add talks first to generate emails.</p>';return;}
-  el.innerHTML='';
-  for(let w=1;w<=Math.min(totalWeeks,26);w++){
-    const email=emailMap[w];
-    const row=document.createElement('div');row.className='email-week-row';
-    row.innerHTML=`
-      <span class="week-label">Week ${w}</span>
-      ${email?`<span class="week-status ${email.status==='sent'?'week-sent':'week-draft'}">${email.status}</span><a href="https://app.beehiiv.com" target="_blank" class="btn btn-ghost btn-xs">View in Beehiiv</a>`:
-      `<button class="btn btn-secondary btn-xs" onclick="generateEmail(${w})">Generate</button>`}
-    `;
-    el.appendChild(row);
-  }
-}
-
-async function generateEmail(weekNum){
-  const btn=event.target;btn.textContent='Generating...';btn.disabled=true;
-  try {
-    const res=await fetch(`${FUNCTIONS_URL}/generate-email`,{
-      method:'POST',
-      headers:{'Content-Type':'application/json','Authorization':`Bearer ${SUPABASE_KEY}`},
-      body:JSON.stringify({conference_id:currentConf,week_number:weekNum})
-    });
-    const data=await res.json();
-    if(data.error) throw new Error(data.error);
-    alert(`✅ Week ${weekNum} email created in Beehiiv as a draft!\n\nSubject: ${data.subject}`);
-    loadEmailQueue();
-  } catch(e){
-    alert('Failed: '+e.message);btn.textContent='Generate';btn.disabled=false;
-  }
-}
-
-// ── UTILS ─────────────────────────────────────────────────────────
-function showPage(name){
-  document.getElementById('page-home').style.display=name==='home'?'block':'none';
-  document.getElementById('page-conference').style.display=name==='conference'?'block':'none';
-  window.scrollTo(0,0);
-  if(name==='home') loadConferences();
-}
-
-function openModal(id){document.getElementById(id).classList.add('open');}
-function closeModal(id){document.getElementById(id).classList.remove('open');}
-document.querySelectorAll('.modal-overlay').forEach(m=>m.addEventListener('click',e=>{if(e.target===m)m.classList.remove('open');}));
-
-function setMsg(id,text,isErr){
-  const el=document.getElementById(id);if(!el) return;
-  el.innerHTML=text?`<div class="msg ${isErr?'msg-err':'msg-ok'}">${text}</div>`:'';
-}
-
-function esc(str){
-  if(!str) return '';
-  return String(str).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-}
-
-function timeAgo(ts){
-  const d=(Date.now()-new Date(ts))/1000;
-  if(d<60) return 'just now';
-  if(d<3600) return Math.floor(d/60)+'m ago';
-  if(d<86400) return Math.floor(d/3600)+'h ago';
-  return Math.floor(d/86400)+'d ago';
-}
-
-init();
+initTabs();
+renderTalks();
 </script>
 </body>
 </html>
