@@ -145,26 +145,14 @@
     }
 
     .newsletter-bar {
-      background: var(--orange);
+      background: var(--ink);
       color: white;
-      padding: 20px 24px;
+      padding: 24px 24px 0;
       text-align: center;
+      border-top: 3px solid var(--gold2);
     }
-    .newsletter-bar p { font-size: 0.95rem; margin-bottom: 12px; opacity: 0.95; }
-    .newsletter-form { display: flex; gap: 8px; justify-content: center; flex-wrap: wrap; max-width: 480px; margin: 0 auto; }
-    .newsletter-form input {
-      flex: 1; min-width: 200px;
-      padding: 10px 16px; border: none; border-radius: 4px;
-      font-family: inherit; font-size: 0.9rem;
-      background: rgba(255,255,255,0.95); color: var(--ink);
-    }
-    .newsletter-form input::placeholder { color: #999; }
-    .newsletter-form button {
-      padding: 10px 20px; background: var(--ink); color: white;
-      border: none; border-radius: 4px; font-family: inherit;
-      font-size: 0.9rem; font-weight: 500; cursor: pointer; white-space: nowrap;
-    }
-    .newsletter-form button:hover { background: var(--ink2); }
+    .newsletter-bar p { font-size: 0.95rem; margin-bottom: 4px; opacity: 0.8; }
+    .newsletter-bar strong { color: var(--gold2); font-weight: 500; }
 
     .session-nav {
       background: var(--white);
