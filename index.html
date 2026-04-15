@@ -282,67 +282,6 @@
     footer a { color: var(--gold2); text-decoration: none; }
 
 
-    /* POPUP */
-    .popup-overlay {
-      position: fixed; inset: 0; z-index: 1000;
-      background: rgba(26,21,16,0.75);
-      display: flex; align-items: center; justify-content: center;
-      padding: 24px;
-      opacity: 0; pointer-events: none;
-      transition: opacity 0.3s ease;
-    }
-    .popup-overlay.visible { opacity: 1; pointer-events: all; }
-    .popup {
-      background: var(--ink);
-      border: 1px solid rgba(255,255,255,0.1);
-      border-top: 4px solid var(--gold2);
-      border-radius: 8px;
-      padding: 40px 36px;
-      max-width: 480px;
-      width: 100%;
-      position: relative;
-      transform: translateY(20px);
-      transition: transform 0.3s ease;
-      text-align: center;
-    }
-    .popup-overlay.visible .popup { transform: translateY(0); }
-    .popup-close {
-      position: absolute; top: 14px; right: 16px;
-      background: none; border: none; color: rgba(250,248,243,0.4);
-      font-size: 1.4rem; cursor: pointer; line-height: 1;
-      transition: color 0.15s;
-    }
-    .popup-close:hover { color: var(--cream); }
-    .popup-eyebrow {
-      font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
-      color: var(--gold2); margin-bottom: 14px;
-    }
-    .popup-title {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.8rem; font-weight: 700;
-      color: var(--cream); line-height: 1.2; margin-bottom: 12px;
-    }
-    .popup-body {
-      font-size: 0.92rem; color: rgba(250,248,243,0.6);
-      font-style: italic; line-height: 1.6; margin-bottom: 28px;
-    }
-    .popup-btn {
-      display: inline-flex; align-items: center; gap: 8px;
-      background: var(--gold2); color: var(--ink);
-      padding: 14px 28px; border-radius: 4px;
-      font-family: 'Source Serif 4', serif;
-      font-size: 0.95rem; font-weight: 500;
-      text-decoration: none; transition: background 0.15s;
-      margin-bottom: 14px;
-    }
-    .popup-btn:hover { background: var(--gold); }
-    .popup-dismiss {
-      display: block; font-size: 0.8rem;
-      color: rgba(250,248,243,0.35); cursor: pointer;
-      background: none; border: none; font-family: inherit;
-      transition: color 0.15s;
-    }
-    .popup-dismiss:hover { color: rgba(250,248,243,0.6); }
 
     /* SUBSCRIBE MODAL */
     .subscribe-overlay {
@@ -412,6 +351,8 @@
     <div class="nl-rule-row"><span class="nl-rule"></span><span class="nl-rule-text">Free Weekly Newsletter</span><span class="nl-rule"></span></div>
     <h2 class="newsletter-heading">Between Conferences</h2>
     <p class="newsletter-sub">Every week between conferences — 3 ideas, 2 quotes &amp; 1 question<br>to keep the spirit of General Conference alive</p>
+    <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
+    <iframe src="https://subscribe-forms.beehiiv.com/d33d1444-ec8d-455f-9f8e-8322f8c9303f" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:311px;height:207px;margin:16px auto 0;display:block;border-radius:0!important;background-color:transparent;box-shadow:0 0 #0000;max-width:100%;"></iframe>
   </div>
 </div>
 
@@ -585,11 +526,6 @@ renderTalks();
 
 
 
-// POPUP
-function closePopup(){
-  document.getElementById('popup-overlay').classList.remove('visible');
-  localStorage.setItem('popup-dismissed','1');
-}
 function closePopupOnOverlay(e){
   if(e.target===document.getElementById('popup-overlay')) closePopup();
 }
@@ -604,11 +540,6 @@ if(!localStorage.getItem('popup-dismissed')){
 
 
 
-<!-- NEWSLETTER POPUP -->
-<div class="popup-overlay" id="popup-overlay" onclick="closePopupOnOverlay(event)">
-  <div class="popup">
-    <button class="popup-close" onclick="closePopup()">&times;</button>
-    <div class="popup-eyebrow">Free Weekly Newsletter</div>
     <h2 class="popup-title">Between Conferences</h2>
     <p class="popup-body">3 ideas &middot; 2 quotes &middot; 1 question<br>from General Conference — every week</p>
     <a class="popup-btn" href="https://betweenconferences.beehiiv.com/subscribe" target="_blank" onclick="closePopup()">
