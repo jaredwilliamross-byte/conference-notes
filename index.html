@@ -146,13 +146,42 @@
 
     .newsletter-bar {
       background: var(--ink);
-      color: white;
-      padding: 24px 24px 0;
-      text-align: center;
       border-top: 3px solid var(--gold2);
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+      padding: 40px 24px;
+      text-align: center;
     }
-    .newsletter-bar p { font-size: 0.95rem; margin-bottom: 4px; opacity: 0.8; }
-    .newsletter-bar strong { color: var(--gold2); font-weight: 500; }
+    .newsletter-bar-inner { max-width: 640px; margin: 0 auto; }
+    .nl-rule-row {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 20px;
+    }
+    .nl-rule {
+      flex: 1; height: 1px; background: rgba(212,160,23,0.3);
+    }
+    .nl-rule-text {
+      font-size: 0.68rem; letter-spacing: 0.22em; text-transform: uppercase;
+      color: var(--gold2); white-space: nowrap; flex-shrink: 0;
+    }
+    .newsletter-heading {
+      font-family: 'Playfair Display', serif; font-size: 2rem; font-weight: 700;
+      color: var(--cream); margin-bottom: 10px; line-height: 1.15;
+      letter-spacing: -0.01em;
+    }
+    .newsletter-sub {
+      font-size: 0.92rem; color: rgba(250,248,243,0.5); margin-bottom: 0;
+      font-style: italic; line-height: 1.7;
+    }
+    .newsletter-cta {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--gold2); color: var(--ink);
+      padding: 14px 28px; border-radius: 4px;
+      font-family: 'Source Serif 4', serif; font-size: 0.95rem; font-weight: 500;
+      text-decoration: none; transition: background 0.15s; cursor: pointer;
+      border: none;
+    }
+    .newsletter-cta:hover { background: var(--gold); }
+    .newsletter-cta-arrow { font-size: 1.1rem; }
 
     .session-nav {
       background: var(--white);
@@ -252,6 +281,111 @@
     }
     footer a { color: var(--gold2); text-decoration: none; }
 
+
+    /* POPUP */
+    .popup-overlay {
+      position: fixed; inset: 0; z-index: 1000;
+      background: rgba(26,21,16,0.75);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.3s ease;
+    }
+    .popup-overlay.visible { opacity: 1; pointer-events: all; }
+    .popup {
+      background: var(--ink);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-top: 4px solid var(--gold2);
+      border-radius: 8px;
+      padding: 40px 36px;
+      max-width: 480px;
+      width: 100%;
+      position: relative;
+      transform: translateY(20px);
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+    .popup-overlay.visible .popup { transform: translateY(0); }
+    .popup-close {
+      position: absolute; top: 14px; right: 16px;
+      background: none; border: none; color: rgba(250,248,243,0.4);
+      font-size: 1.4rem; cursor: pointer; line-height: 1;
+      transition: color 0.15s;
+    }
+    .popup-close:hover { color: var(--cream); }
+    .popup-eyebrow {
+      font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase;
+      color: var(--gold2); margin-bottom: 14px;
+    }
+    .popup-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem; font-weight: 700;
+      color: var(--cream); line-height: 1.2; margin-bottom: 12px;
+    }
+    .popup-body {
+      font-size: 0.92rem; color: rgba(250,248,243,0.6);
+      font-style: italic; line-height: 1.6; margin-bottom: 28px;
+    }
+    .popup-btn {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--gold2); color: var(--ink);
+      padding: 14px 28px; border-radius: 4px;
+      font-family: 'Source Serif 4', serif;
+      font-size: 0.95rem; font-weight: 500;
+      text-decoration: none; transition: background 0.15s;
+      margin-bottom: 14px;
+    }
+    .popup-btn:hover { background: var(--gold); }
+    .popup-dismiss {
+      display: block; font-size: 0.8rem;
+      color: rgba(250,248,243,0.35); cursor: pointer;
+      background: none; border: none; font-family: inherit;
+      transition: color 0.15s;
+    }
+    .popup-dismiss:hover { color: rgba(250,248,243,0.6); }
+
+    /* SUBSCRIBE MODAL */
+    .subscribe-overlay {
+      position: fixed; inset: 0; z-index: 2000;
+      background: rgba(26,21,16,0.85);
+      display: flex; align-items: center; justify-content: center;
+      padding: 24px;
+      opacity: 0; pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+    .subscribe-overlay.visible { opacity: 1; pointer-events: all; }
+    .subscribe-modal {
+      background: var(--white);
+      border-radius: 10px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 660px;
+      position: relative;
+      transform: translateY(16px) scale(0.98);
+      transition: transform 0.25s ease;
+      box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+    }
+    .subscribe-overlay.visible .subscribe-modal { transform: translateY(0) scale(1); }
+    .subscribe-modal-header {
+      background: var(--ink);
+      border-top: 3px solid var(--gold2);
+      padding: 16px 20px;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .subscribe-modal-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem; font-weight: 600; color: var(--cream);
+    }
+    .subscribe-modal-close {
+      background: none; border: none;
+      color: rgba(250,248,243,0.5); font-size: 1.4rem;
+      cursor: pointer; line-height: 1; transition: color 0.15s;
+    }
+    .subscribe-modal-close:hover { color: var(--cream); }
+    .subscribe-modal iframe {
+      display: block; width: 100%; border: none;
+      height: 320px;
+    }
     @media (max-width: 600px) {
       .talk-inner { padding: 20px; }
       .talk-title { font-size: 1.1rem; }
@@ -274,9 +408,11 @@
 </header>
 
 <div class="newsletter-bar">
-  <p><strong>Between Conferences</strong> &mdash; Get 3 ideas, 2 quotes &amp; 1 question from General Conference each week.</p>
-  <script async src="https://subscribe-forms.beehiiv.com/embed.js"></script>
-  <iframe src="https://subscribe-forms.beehiiv.com/d33d1444-ec8d-455f-9f8e-8322f8c9303f" class="beehiiv-embed" data-test-id="beehiiv-embed" frameborder="0" scrolling="no" style="width:100%;max-width:641px;height:291px;margin:0 auto;display:block;border-radius:0!important;background-color:transparent;box-shadow:0 0 #0000;"></iframe>
+  <div class="newsletter-bar-inner">
+    <div class="nl-rule-row"><span class="nl-rule"></span><span class="nl-rule-text">Free Weekly Newsletter</span><span class="nl-rule"></span></div>
+    <h2 class="newsletter-heading">Between Conferences</h2>
+    <p class="newsletter-sub">Every week between conferences — 3 ideas, 2 quotes &amp; 1 question<br>to keep the spirit of General Conference alive</p>
+  </div>
 </div>
 
 <nav class="session-nav">
@@ -445,6 +581,41 @@ function subscribeNewsletter(e){
 
 initTabs();
 renderTalks();
+
+
+
+
+// POPUP
+function closePopup(){
+  document.getElementById('popup-overlay').classList.remove('visible');
+  localStorage.setItem('popup-dismissed','1');
+}
+function closePopupOnOverlay(e){
+  if(e.target===document.getElementById('popup-overlay')) closePopup();
+}
+// Show after 30 seconds if not previously dismissed
+if(!localStorage.getItem('popup-dismissed')){
+  setTimeout(()=>{
+    document.getElementById('popup-overlay').classList.add('visible');
+  }, 30000);
+}
 </script>
+
+
+
+
+<!-- NEWSLETTER POPUP -->
+<div class="popup-overlay" id="popup-overlay" onclick="closePopupOnOverlay(event)">
+  <div class="popup">
+    <button class="popup-close" onclick="closePopup()">&times;</button>
+    <div class="popup-eyebrow">Free Weekly Newsletter</div>
+    <h2 class="popup-title">Between Conferences</h2>
+    <p class="popup-body">3 ideas &middot; 2 quotes &middot; 1 question<br>from General Conference — every week</p>
+    <a class="popup-btn" href="https://betweenconferences.beehiiv.com/subscribe" target="_blank" onclick="closePopup()">
+      Subscribe Free &rarr;
+    </a>
+    <button class="popup-dismiss" onclick="closePopup()">No thanks, I'll pass</button>
+  </div>
+</div>
 </body>
 </html>
