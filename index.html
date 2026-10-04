@@ -61,15 +61,35 @@
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/MixedEventAttendanceMode",
     "image": "https://www.generalconferencesummaries.com/og-image.png",
-    "location": {
-      "@type": "Place",
-      "name": "Conference Center",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Salt Lake City",
-        "addressRegion": "UT",
-        "addressCountry": "US"
+    "location": [
+      {
+        "@type": "Place",
+        "name": "Conference Center",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "60 W North Temple St",
+          "addressLocality": "Salt Lake City",
+          "addressRegion": "UT",
+          "postalCode": "84150",
+          "addressCountry": "US"
+        }
+      },
+      {
+        "@type": "VirtualLocation",
+        "url": "https://www.churchofjesuschrist.org/study/general-conference"
       }
+    ],
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://www.churchofjesuschrist.org/study/general-conference",
+      "validFrom": "2026-09-01"
+    },
+    "performer": {
+      "@type": "Person",
+      "name": "President Dallin H. Oaks"
     },
     "organizer": {
       "@type": "Organization",
